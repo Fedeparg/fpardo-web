@@ -158,6 +158,32 @@ body {
     max-width: 700px;
 }
 
+.hero-social {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.hero-social-link:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
 .hero-cta {
     display: flex;
     gap: var(--spacing-sm);
