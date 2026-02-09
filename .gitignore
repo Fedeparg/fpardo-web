@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.log
+
+# Optional: Exclude assets if you don't want to commit them to GitHub
+# Uncomment the lines below if you prefer to keep personal files private
+# assets/perfil.jpg
+# assets/cv-federico-pardo.pdf
+
+# Node modules (if you add any build tools later)
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
