@@ -139,7 +139,7 @@ if (contactForm) {
 // CV Download Tracking (Optional)
 // ================================
 
-const cvLinks = document.querySelectorAll('a[href*="cv-federico-pardo.pdf"]');
+const cvLinks = document.querySelectorAll('a[href*="cv_federico_pardo.pdf"]');
 
 cvLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -177,7 +177,7 @@ setTimeout(typeSubtitle, 500);
 
 console.log('%c👋 Hey there!', 'font-size: 20px; font-weight: bold;');
 console.log('%cInterested in how this site was built?', 'font-size: 14px;');
-console.log('%cCheck out the source: https://github.com/yourusername/fpardo-web', 'font-size: 12px; color: #3b82f6;');
+console.log('%cCheck out the source: https://github.com/fedeparg/fpardo-web', 'font-size: 12px; color: #3b82f6;');
 console.log('%c\nLooking for a Research Engineer who builds production AI systems?', 'font-size: 14px; font-weight: bold; color: #10b981;');
 console.log('%cLet\'s talk: federico.pardog@gmail.com', 'font-size: 12px;');
 
