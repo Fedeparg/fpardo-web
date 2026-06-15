@@ -38,7 +38,6 @@ Desktop.ini
 
 # Node / React
 node_modules/
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 .npm/
