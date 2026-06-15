@@ -2,33 +2,18 @@ import { toolMeta } from '../data/toolMeta.js'
 
 function ToolTag({ name }) {
   const meta = toolMeta[name]
-  const url = meta?.url
-
-  if (meta?.icon) {
-    const Icon = meta.icon
-    return (
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="tool-tag tool-tag--icon"
-        title={name}
-        aria-label={name}
-      >
-        <Icon size={20} />
-      </a>
-    )
-  }
+  const Icon = meta?.icon
 
   return (
     <a
-      href={url}
+      href={meta?.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="tool-tag tool-tag--text tag"
+      className={`tool-tag ${Icon ? 'tool-tag--icon' : 'tool-tag--text tag'}`}
       title={name}
+      aria-label={name}
     >
-      {name}
+      {Icon ? <Icon size={20} /> : name}
     </a>
   )
 }
