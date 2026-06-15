@@ -19,11 +19,6 @@ function About() {
               (XAI) frameworks. I prioritize building reliable, high-availability microservices over simply
               chasing theoretical benchmarks.
             </p>
-            <p>
-              <strong>Currently seeking:</strong> AI Engineer, Machine Learning Engineer, or Senior Python
-              Developer roles in high-impact environments. Immediately available for international remote
-              contract opportunities (B2B) or relocation.
-            </p>
           </div>
         </div>
       </div>
