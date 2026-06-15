@@ -8,8 +8,19 @@ function Experience() {
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
-              <h3>AI Engineer</h3>
-              <p className="timeline-meta">University of Murcia · May 2023 - May 2026</p>
+              <div className="timeline-header">
+                <div>
+                  <h3>AI Engineer</h3>
+                  <p className="timeline-meta">University of Murcia · May 2023 - May 2026</p>
+                </div>
+                <div className="timeline-logo-wrap">
+                  <img
+                    className="timeline-logo"
+                    src="/assets/logos/umu.png"
+                    alt="University of Murcia"
+                  />
+                </div>
+              </div>
               <p>
                 Designed and deployed a decoupled microservices architecture (Python, FastAPI, Docker, Celery)
                 for multimodal AI inference, optimizing processing latency across local and cloud infrastructure.
@@ -25,8 +36,19 @@ function Experience() {
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
-              <h3>Cloud Technical Support Specialist (GCP)</h3>
-              <p className="timeline-meta">Webhelp (Google Cloud Project) · Aug 2022 - Apr 2023</p>
+              <div className="timeline-header">
+                <div>
+                  <h3>Cloud Technical Support Specialist (GCP)</h3>
+                  <p className="timeline-meta">Webhelp (Google Cloud Project) · Aug 2022 - Apr 2023</p>
+                </div>
+                <div className="timeline-logo-wrap">
+                  <img
+                    className="timeline-logo"
+                    src="/assets/logos/google-cloud.svg"
+                    alt="Google Cloud"
+                  />
+                </div>
+              </div>
               <p>
                 Provided L2 technical and architectural support for enterprise clients on Google Cloud Platform.
                 Handled deep troubleshooting for production workloads involving Compute Engine, core VPC
@@ -39,8 +61,19 @@ function Experience() {
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
-              <h3>Data Scientist & Machine Learning Engineer</h3>
-              <p className="timeline-meta">CENTIC (Technological Center) · Jun 2021 - Aug 2022</p>
+              <div className="timeline-header">
+                <div>
+                  <h3>Data Scientist & Machine Learning Engineer</h3>
+                  <p className="timeline-meta">CENTIC (Technological Center) · Jun 2021 - Aug 2022</p>
+                </div>
+                <div className="timeline-logo-wrap">
+                  <img
+                    className="timeline-logo"
+                    src="/assets/logos/centic.png"
+                    alt="CENTIC"
+                  />
+                </div>
+              </div>
               <p>
                 Deployed an industrial real-time CNN for automated defect detection, achieving 98% accuracy and
                 sub-100ms inference latency running directly on resource-constrained embedded hardware. Developed

@@ -42,8 +42,8 @@ function Contact() {
 
           <div className="contact-info">
             <p>
-              Seeking engineering challenges in Generative AI, system deployment, and multimodal
-              architectures. Open to B2B contracting or global relocation opportunities.
+              If you're working on something interesting in AI, want to collaborate, or just have
+              questions about any of the work here, feel free to reach out.
             </p>
             <div className="contact-links">
               <a href="mailto:federico.pardog@gmail.com" className="contact-link">

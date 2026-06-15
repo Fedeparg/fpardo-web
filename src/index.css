@@ -336,10 +336,47 @@ body {
     display: none;
 }
 
+.timeline-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-logo-wrap {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 160px;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.timeline-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.timeline-logo-icon {
+    color: var(--text-secondary);
+    opacity: 0.85;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
 .timeline-content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 0;
 }
 
 .timeline-meta {
@@ -468,6 +505,18 @@ body {
     background-color: var(--bg-primary);
     color: var(--accent);
     border-color: var(--accent);
+}
+
+.skill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.85rem;
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    border: 1px solid var(--border);
 }
 
 .tool-tag {
