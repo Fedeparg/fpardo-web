@@ -2,7 +2,9 @@
   "nav": {
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "publications": "Publicaciones"
+    "publications": "Publicaciones",
+    "open_menu": "Abrir menú de navegación",
+    "close_menu": "Cerrar menú de navegación"
   },
   "hero": {
     "subtitle": "Ingeniero de IA · Doctor en Informática e IA",

@@ -2,7 +2,9 @@
   "nav": {
     "about": "About",
     "projects": "Projects",
-    "publications": "Publications"
+    "publications": "Publications",
+    "open_menu": "Open navigation menu",
+    "close_menu": "Close navigation menu"
   },
   "hero": {
     "subtitle": "AI Engineer · PhD in Computer Science & AI",
