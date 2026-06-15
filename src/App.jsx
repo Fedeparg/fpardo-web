@@ -1,20 +1,23 @@
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
-import Experience from './components/Experience.jsx'
-import Publications from './components/Publications.jsx'
-import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import PublicationsPage from './pages/PublicationsPage.jsx'
+import ProjectsPage from './pages/ProjectsPage.jsx'
+import PhdProjectPage from './pages/PhdProjectPage.jsx'
 
 function App() {
   return (
     <>
       <Nav />
-      <Hero />
-      <About />
-      <Experience />
-      <Publications />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/publications" element={<PublicationsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/phd" element={<PhdProjectPage />} />
+      </Routes>
       <Footer />
     </>
   )
