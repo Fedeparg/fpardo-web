@@ -1,12 +1,17 @@
+import { useTranslation } from 'react-i18next'
+
 function Footer() {
+  const { t } = useTranslation()
+
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; {new Date().getFullYear()} Federico Pardo.</p>
+        <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
         <p className="footer-note">
-          Hosted on self-managed infrastructure ·{' '}
+          {t('footer.hosted')}
+          {' · '}
           <a href="https://github.com/fedeparg/fpardo-web" target="_blank" rel="noopener">
-            View Source
+            {t('footer.source')}
           </a>
         </p>
       </div>

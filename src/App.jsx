@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import HomePage from './pages/HomePage.jsx'
@@ -15,6 +16,12 @@ function ScrollToTop() {
 }
 
 function App() {
+  const { i18n } = useTranslation()
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language
+  }, [i18n.language])
+
   return (
     <>
       <ScrollToTop />

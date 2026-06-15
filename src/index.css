@@ -119,6 +119,37 @@ body {
 }
 
 /* ================================
+   Language Toggle
+   ================================ */
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: var(--spacing-sm);
+  font-size: 1rem;
+  line-height: 1;
+  transition: var(--transition);
+}
+
+.lang-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.lang-flag--active {
+  opacity: 1;
+}
+
+.lang-flag--inactive {
+  opacity: 0.35;
+}
+
+/* ================================
    Hero Section
    ================================ */
 

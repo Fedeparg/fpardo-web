@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "publications": "Publicaciones"
+  },
+  "hero": {
+    "subtitle": "Ingeniero de IA · Doctor en Informática e IA",
+    "description": "Construyo sistemas de IA multimodal listos para producción combinando procesamiento de audio, grandes modelos de lenguaje e IA explicable en arquitecturas escalables. Doctor en Informática por la Universidad de Murcia con la calificación de Summa Cum Laude.",
+    "cta_contact": "Contactar",
+    "cta_cv": "Descargar CV",
+    "photo_alt": "Federico Pardo"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Soy Doctor en Informática e Inteligencia Artificial por la Universidad de Murcia, con la calificación de <strong>Summa Cum Laude</strong>. Durante los últimos 4 años, mi trabajo se ha centrado en conectar los sistemas de IA más avanzados con la ingeniería de software robusta y lista para producción.",
+    "p2": "Mi especialidad se centra en el desarrollo de arquitecturas multimodales (combinando procesamiento de audio con Grandes Modelos de Lenguaje), la orquestación de pipelines de datos escalables y la implementación de marcos de IA Explicable (XAI). Priorizo construir microservicios fiables y de alta disponibilidad sobre simplemente perseguir benchmarks teóricos."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "umu": {
+      "role": "Ingeniero de IA",
+      "meta": "Universidad de Murcia · Mayo 2023 – Mayo 2026",
+      "description": "Diseñé y desplegué una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) para inferencia de IA multimodal, optimizando la latencia de procesamiento en infraestructura local y en la nube. Construí pipelines de procesamiento de audio extremo a extremo integrando ASR (Whisper), diarización de hablantes, extracción de características paralingüísticas y embeddings vectoriales semánticos (FAISS). Apliqué marcos de IA Explicable (XAI) utilizando valores SHAP para interpretar modelos BERT ajustados, logrando transparencia total del sistema. Publiqué 5 artículos de investigación de alto impacto como primer autor en venues como IEEE Access y Applied Sciences."
+    },
+    "webhelp": {
+      "role": "Especialista en Soporte Técnico Cloud (GCP)",
+      "meta": "Webhelp (Google Cloud Project) · Ago 2022 – Abr 2023",
+      "description": "Proporcioné soporte técnico y arquitectónico L2 a clientes empresariales en Google Cloud Platform. Gestioné la resolución de problemas complejos en cargas de trabajo de producción que involucran Compute Engine, redes VPC, IAM y Google Kubernetes Engine (GKE). Colaboré con equipos SRE para analizar y resolver degradaciones de infraestructura en la causa raíz."
+    },
+    "centic": {
+      "role": "Científico de Datos e Ingeniero de Machine Learning",
+      "meta": "CENTIC (Centro Tecnológico) · Jun 2021 – Ago 2022",
+      "description": "Desplegué una CNN industrial en tiempo real para detección automática de defectos, alcanzando un 98% de precisión y latencia de inferencia inferior a 100 ms en hardware embebido con recursos limitados. Desarrollé sistemas NLP basados en LSTM optimizados para análisis de complejidad semántica. Construí y mantuve pipelines ETL automatizados y multi-fuente para activos de datos tabulares, de imagen y audio en bruto."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "languages": "Lenguajes",
+      "ai": "IA y Aprendizaje Automático",
+      "backend": "Backend y APIs",
+      "infra": "Infraestructura y DevOps"
+    }
+  },
+  "publications": {
+    "title": "Publicaciones",
+    "intro": "Ver mi lista completa de publicaciones en",
+    "scholar": "Google Scholar",
+    "view_thesis": "Ver Tesis →",
+    "view_pub": "Ver Publicación →",
+    "thesis": {
+      "title": "Enriched Feedback of Classroom Dynamics Using AI",
+      "meta": "Universidad de Murcia · 2026 · Tesis Doctoral (Summa Cum Laude)",
+      "description": "Tesis doctoral que diseña un ecosistema de IA multimodal escalable para procesar, segmentar e interpretar variables heterogéneas del aula, con un enfoque fundamental en la explicabilidad arquitectónica."
+    },
+    "interventions": {
+      "title": "Explaining Teacher Interventions in SRS-Based Classrooms",
+      "meta": "IEEE Access · Dic 2025 · Primer Autor",
+      "description": "Combina características de texto (BERT) y audio para clasificar diferentes tipos de intervenciones docentes en aulas."
+    },
+    "audio_review": {
+      "title": "Audio Features in Education: A Systematic Review",
+      "meta": "Applied Sciences · Jun 2025 · Primer Autor",
+      "description": "Revisión sistemática de 82 estudios (2014–2024) sobre el uso del procesamiento de audio en investigación educativa."
+    },
+    "generalizable": {
+      "title": "Exploring AI Techniques for Generalizable Teaching Practice Identification",
+      "meta": "IEEE Access · Sep 2024 · Primer Autor",
+      "description": "Explora técnicas para mejorar la generalización de modelos de IA multimodal en diferentes entornos de aula."
+    },
+    "analytics": {
+      "title": "AI-Driven Teacher Analytics: Informative Insights on Classroom Activities",
+      "meta": "IEEE TALE · Nov 2023 · Coautor",
+      "description": "Construye un sistema para analizar automáticamente grabaciones de aula y generar información útil para los docentes."
+    },
+    "wooclap": {
+      "title": "Analyzing Wooclap's Competition Mode with AI Through Classroom Recordings",
+      "meta": "IEEE RITA · 2024 · Coautor",
+      "description": "Analiza cómo funcionan los sistemas de respuesta de estudiantes en aulas reales mediante IA multimodal."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Si estás trabajando en algo interesante de IA, quieres colaborar, o simplemente tienes preguntas sobre alguno de los proyectos, no dudes en escribirme.",
+    "linkedin": "Perfil de LinkedIn",
+    "github": "Perfil de GitHub",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit_idle": "Enviar Mensaje",
+      "submit_sending": "Enviando...",
+      "submit_success": "¡Mensaje Enviado!",
+      "submit_error": "Error, inténtalo de nuevo"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "view": "Ver Proyecto →",
+    "phd": {
+      "title": "MoviSound (PhD)",
+      "category": "Plataforma de Investigación",
+      "period": "Mayo 2023 – Mayo 2026",
+      "description": "Una plataforma de IA multimodal que procesa grabaciones de aula para dar a los docentes retroalimentación objetiva y automatizada sobre su práctica. Combina pipelines de audio extremo a extremo (ASR, diarización de hablantes, extracción de características paralingüísticas) con modelos de texto basados en BERT interpretados mediante marcos de explicabilidad SHAP para generar retroalimentación transparente y automatizada."
+    }
+  },
+  "phd": {
+    "eyebrow": "Plataforma de Investigación Doctoral · Universidad de Murcia · Mayo 2023 – Mayo 2026",
+    "title": "MoviSound (PhD)",
+    "subtitle": "Una plataforma de IA multimodal que analiza automáticamente grabaciones de aula para dar a los docentes una retroalimentación objetiva y transparente sobre su práctica docente.",
+    "about": {
+      "heading": "Sobre el Proyecto",
+      "p1": "La evaluación tradicional de la práctica docente se basa en la observación humana directa, un enfoque costoso, logísticamente complejo e inherentemente subjetivo. MoviSound aborda esta brecha procesando grabaciones sincrónicas de aula a través de un pipeline de IA multimodal y entregando retroalimentación estructurada y explicable a los docentes a través de una interfaz web.",
+      "p2": "La plataforma se desarrolló como una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) que combina análisis de audio extremo a extremo (ASR mediante Whisper, diarización de hablantes, extracción de características paralingüísticas) con modelos de lenguaje ajustados (BERT) interpretados mediante marcos de explicabilidad basados en SHAP. El objetivo no es solo la precisión de clasificación, sino la transparencia: los docentes necesitan entender por qué el sistema llega a sus conclusiones.",
+      "p3": "Esta plataforma es el resultado aplicado de mi tesis doctoral, galardonada con Summa Cum Laude por la Universidad de Murcia en 2026.",
+      "cta_thesis": "Descargar Tesis PDF",
+      "cta_github": "Ver en GitHub"
+    },
+    "architecture": {
+      "heading": "Arquitectura del Sistema",
+      "p1": "Cada nodo del diagrama representa un contenedor Docker independiente. El pipeline ingesta grabaciones de aula, las procesa a través de etapas de análisis de audio y transcripción, aplica fusión multimodal y expone los resultados a través de una API REST consumida por el frontend web.",
+      "caption": "Arquitectura de microservicios de MoviSound"
+    },
+    "demo": {
+      "heading": "Demo de la Plataforma",
+      "p1": "La siguiente grabación muestra la interfaz web de MoviSound procesando una sesión de aula real y visualizando las métricas extraídas. Próximamente estará disponible un recorrido completo con narración."
+    },
+    "pubs": {
+      "heading": "Publicaciones de Investigación",
+      "p1": "La plataforma fue desarrollada a lo largo de tres artículos revisados por pares publicados en revistas indexadas en JCR, cada uno cubriendo una fase incremental de la metodología.",
+      "paper1_venue": "Applied Sciences · Jun 2025 · Primer Autor",
+      "paper1_title": "Audio Features in Education: A Systematic Review of Computational Applications and Research Gaps",
+      "paper2_venue": "IEEE Access · Sep 2024 · Primer Autor",
+      "paper2_title": "Exploring AI Techniques for Generalizable Teaching Practice Identification",
+      "paper3_venue": "IEEE Access · Dic 2025 · Primer Autor",
+      "paper3_title": "Explaining Teacher Interventions in SRS-Based Classrooms",
+      "view_pub": "Ver Publicación →"
+    },
+    "back": "← Volver a Proyectos"
+  },
+  "footer": {
+    "copyright": "© {{year}} Federico Pardo.",
+    "hosted": "Alojada en infraestructura propia",
+    "source": "Ver código"
+  }
+}
