@@ -16,6 +16,8 @@ export default [
     },
     plugins: { react: reactPlugin },
     rules: {
+      'react/jsx-uses-vars': 'error',
+      'react/jsx-uses-react': 'error',
       'react/jsx-no-literals': ['error', {
         allowedStrings: ['FP', '·'],
       }],
