@@ -1,3 +1,6 @@
+# Claude Code
+.claude/
+
 # macOS
 .DS_Store
 .AppleDouble
@@ -24,16 +27,33 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.log
+*.cache
 
-# Optional: Exclude assets if you don't want to commit them to GitHub
-# Uncomment the lines below if you prefer to keep personal files private
-# assets/perfil.jpg
-# assets/cv-federico-pardo.pdf
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
 
-# Node modules (if you add any build tools later)
+# Node / React
 node_modules/
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm/
+.yarn/
 
 # Build outputs
 dist/
 build/
+out/
+.next/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
