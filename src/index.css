@@ -843,6 +843,12 @@ body {
     line-height: 1.4;
 }
 
+.article-cta-group {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+}
+
 .article-footer {
     border-top: 1px solid var(--border);
     padding-top: var(--spacing-md);

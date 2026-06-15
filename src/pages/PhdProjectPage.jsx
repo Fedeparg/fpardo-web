@@ -42,14 +42,24 @@ function PhdProjectPage() {
               This platform is the applied result of my doctoral thesis, awarded
               Summa Cum Laude by the University of Murcia in 2026.
             </p>
-            <a
-              href="/assets/projects/phd/phd_federico_pardo.pdf"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noopener"
-            >
-              Download Thesis PDF
-            </a>
+            <div className="article-cta-group">
+              <a
+                href="/assets/projects/phd/phd_federico_pardo.pdf"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noopener"
+              >
+                Download Thesis PDF
+              </a>
+              <a
+                href="https://github.com/Fedeparg/movisound"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
           </section>
 
           <section className="article-section">
