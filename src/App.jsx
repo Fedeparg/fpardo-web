@@ -1,5 +1,12 @@
+import Nav from './components/Nav.jsx'
+
 function App() {
-  return <p>Scaffolding OK — migración en progreso</p>
+  return (
+    <>
+      <Nav />
+      <p style={{ padding: '6rem 2rem' }}>Migración en progreso…</p>
+    </>
+  )
 }
 
 export default App
