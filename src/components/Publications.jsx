@@ -27,7 +27,7 @@ function Publications() {
               Doctoral dissertation engineering a scalable multimodal AI ecosystem designed to process, segment,
               and interpret heterogeneous classroom variables with a fundamental focus on architectural explainability.
             </p>
-            <a href="/assets/phd_federico_pardo.pdf" target="_blank" rel="noopener" className="pub-link">View Thesis →</a>
+            <a href="/assets/projects/phd/phd_federico_pardo.pdf" target="_blank" rel="noopener" className="pub-link">View Thesis →</a>
           </div>
 
           <div className="publication-card">
