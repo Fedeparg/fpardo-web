@@ -1,0 +1,16 @@
+services:
+  fpardo-web:
+    build: .
+    image: fpardo-web:latest
+    container_name: fpardo-web
+    restart: unless-stopped
+    networks:
+      - services_net
+    ports:
+      - "8081:80"
+    environment:
+      - TZ=Europe/Paris
+
+networks:
+  services_net:
+    external: true
