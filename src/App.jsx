@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import PublicationsPage from './pages/PublicationsPage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
-import PhdProjectPage from './pages/PhdProjectPage.jsx'
+import PhdProjectPage from './pages/projects/PhdProjectPage.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
