@@ -1,6 +1,7 @@
 import { FaLinkedin } from 'react-icons/fa'
 import { SiGithub, SiX, SiYoutube } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
+import { useTranslation } from 'react-i18next'
 
 const socials = [
   { href: 'mailto:federico.pardog@gmail.com',   icon: MdEmail,    label: 'Email' },
@@ -11,23 +12,21 @@ const socials = [
 ]
 
 function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-layout">
 
           <div className="hero-photo">
-            <img src="/assets/perfil.jpg" alt="Federico Pardo" />
+            <img src="/assets/perfil.jpg" alt={t('hero.photo_alt')} />
           </div>
 
           <div className="hero-text">
-            <h1 className="hero-title">Federico Pardo</h1>
-            <p className="hero-subtitle">AI Engineer · PhD in Computer Science & AI</p>
-            <p className="hero-description">
-              I build production-ready multimodal AI systems combining audio processing,
-              large language models, and explainable AI into scalable architectures.
-              PhD in Computer Science completed Summa Cum Laude at the University of Murcia.
-            </p>
+            <h1 className="hero-title">{'Federico Pardo'}</h1>
+            <p className="hero-subtitle">{t('hero.subtitle')}</p>
+            <p className="hero-description">{t('hero.description')}</p>
 
             <div className="hero-social">
               {socials.map(({ href, icon: Icon, label, external }) => (
@@ -44,9 +43,9 @@ function Hero() {
             </div>
 
             <div className="hero-cta">
-              <a href="#contact" className="btn btn-primary">Get in touch</a>
+              <a href="#contact" className="btn btn-primary">{t('hero.cta_contact')}</a>
               <a href="/assets/cv_federico_pardo.pdf" className="btn btn-secondary" download target="_blank" rel="noopener noreferrer">
-                Download CV
+                {t('hero.cta_cv')}
               </a>
             </div>
           </div>

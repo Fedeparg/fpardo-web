@@ -1,18 +1,18 @@
 export const skillCategories = [
   {
-    title: 'Languages',
+    titleKey: 'skills.categories.languages',
     skills: ['Python', 'Java', 'C', 'C++', 'JavaScript'],
   },
   {
-    title: 'AI & Machine Learning',
+    titleKey: 'skills.categories.ai',
     skills: ['PyTorch', 'HuggingFace', 'LangChain', 'Whisper', 'Ollama', 'scikit-learn', 'SHAP', 'FAISS'],
   },
   {
-    title: 'Backend & APIs',
+    titleKey: 'skills.categories.backend',
     skills: ['FastAPI', 'Celery', 'Redis', 'PostgreSQL', 'MongoDB'],
   },
   {
-    title: 'Infrastructure & DevOps',
+    titleKey: 'skills.categories.infra',
     skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'GCP'],
   },
 ]

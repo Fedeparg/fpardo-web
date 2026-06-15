@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "publications": "Publications"
+  },
+  "hero": {
+    "subtitle": "AI Engineer · PhD in Computer Science & AI",
+    "description": "I build production-ready multimodal AI systems combining audio processing, large language models, and explainable AI into scalable architectures. PhD in Computer Science completed Summa Cum Laude at the University of Murcia.",
+    "cta_contact": "Get in touch",
+    "cta_cv": "Download CV",
+    "photo_alt": "Federico Pardo"
+  },
+  "about": {
+    "title": "About",
+    "p1": "I hold a PhD in Computer Science and Artificial Intelligence from the University of Murcia, awarded with <strong>Summa Cum Laude</strong> honors. Over the past 4+ years, my work has centered on bridging the gap between cutting-edge AI systems and robust, production-ready software engineering.",
+    "p2": "My expertise focuses on developing multimodal architectures (combining audio processing with Large Language Models), orchestrating scalable data pipelines, and implementing Explainable AI (XAI) frameworks. I prioritize building reliable, high-availability microservices over simply chasing theoretical benchmarks."
+  },
+  "experience": {
+    "title": "Experience",
+    "umu": {
+      "role": "AI Engineer",
+      "meta": "University of Murcia · May 2023 – May 2026",
+      "description": "Designed and deployed a decoupled microservices architecture (Python, FastAPI, Docker, Celery) for multimodal AI inference, optimizing processing latency across local and cloud infrastructure. Built end-to-end audio processing pipelines integrating ASR (Whisper), speaker diarization, paralinguistic feature extraction, and semantic vector embeddings (FAISS). Applied Explainable AI (XAI) frameworks utilizing SHAP values to interpret fine-tuned BERT models, delivering complete system transparency. Published 5 high-impact, first-author research papers in venues like IEEE Access and Applied Sciences."
+    },
+    "webhelp": {
+      "role": "Cloud Technical Support Specialist (GCP)",
+      "meta": "Webhelp (Google Cloud Project) · Aug 2022 – Apr 2023",
+      "description": "Provided L2 technical and architectural support for enterprise clients on Google Cloud Platform. Handled deep troubleshooting for production workloads involving Compute Engine, core VPC networking, IAM, and Google Kubernetes Engine (GKE). Collaborated with SRE teams to analyze and fix root-cause infrastructure degradation."
+    },
+    "centic": {
+      "role": "Data Scientist & Machine Learning Engineer",
+      "meta": "CENTIC (Technological Center) · Jun 2021 – Aug 2022",
+      "description": "Deployed an industrial real-time CNN for automated defect detection, achieving 98% accuracy and sub-100ms inference latency running directly on resource-constrained embedded hardware. Developed optimized LSTM-based NLP systems for semantic complexity analysis. Built and maintained automated, multi-source ETL pipelines for tabular, image, and raw audio data assets."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "languages": "Languages",
+      "ai": "AI & Machine Learning",
+      "backend": "Backend & APIs",
+      "infra": "Infrastructure & DevOps"
+    }
+  },
+  "publications": {
+    "title": "Publications",
+    "intro": "View my complete publication list on",
+    "scholar": "Google Scholar",
+    "view_thesis": "View Thesis →",
+    "view_pub": "View Publication →",
+    "thesis": {
+      "title": "Enriched Feedback of Classroom Dynamics Using AI",
+      "meta": "University of Murcia · 2026 · PhD Thesis (Summa Cum Laude)",
+      "description": "Doctoral dissertation engineering a scalable multimodal AI ecosystem designed to process, segment, and interpret heterogeneous classroom variables with a fundamental focus on architectural explainability."
+    },
+    "interventions": {
+      "title": "Explaining Teacher Interventions in SRS-Based Classrooms",
+      "meta": "IEEE Access · Dec 2025 · First Author",
+      "description": "Combined text (BERT) and audio features to classify different types of teacher interventions in classrooms."
+    },
+    "audio_review": {
+      "title": "Audio Features in Education: A Systematic Review",
+      "meta": "Applied Sciences · Jun 2025 · First Author",
+      "description": "Systematic review of 82 studies (2014–2024) on using audio processing in educational research."
+    },
+    "generalizable": {
+      "title": "Exploring AI Techniques for Generalizable Teaching Practice Identification",
+      "meta": "IEEE Access · Sep 2024 · First Author",
+      "description": "Explored techniques to make multimodal AI models generalize better across different classroom settings."
+    },
+    "analytics": {
+      "title": "AI-Driven Teacher Analytics: Informative Insights on Classroom Activities",
+      "meta": "IEEE TALE · Nov 2023 · Co-Author",
+      "description": "Built a system to automatically analyze classroom recordings and generate insights for teachers."
+    },
+    "wooclap": {
+      "title": "Analyzing Wooclap's Competition Mode with AI Through Classroom Recordings",
+      "meta": "IEEE RITA · 2024 · Co-Author",
+      "description": "Analyzed how student response systems work in real classrooms using multimodal AI."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "intro": "If you're working on something interesting in AI, want to collaborate, or just have questions about any of the work here, feel free to reach out.",
+    "linkedin": "LinkedIn Profile",
+    "github": "GitHub Profile",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit_idle": "Send Message",
+      "submit_sending": "Sending...",
+      "submit_success": "Message Sent!",
+      "submit_error": "Error, try again"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "view": "View Project →",
+    "phd": {
+      "title": "MoviSound (PhD)",
+      "category": "Research Platform",
+      "period": "May 2023 – May 2026",
+      "description": "A multimodal AI platform that processes classroom recordings to give teachers objective, automated feedback on their practice. Combines end-to-end audio pipelines (ASR, speaker diarization, paralinguistic feature extraction) with BERT-based text models interpreted through SHAP explainability frameworks to generate transparent, automated feedback for teachers."
+    }
+  },
+  "phd": {
+    "eyebrow": "PhD Research Platform · University of Murcia · May 2023 – May 2026",
+    "title": "MoviSound (PhD)",
+    "subtitle": "A multimodal AI platform that automatically analyzes classroom recordings to give teachers objective, transparent feedback on their teaching practice.",
+    "about": {
+      "heading": "About the Project",
+      "p1": "Traditional teaching practice evaluation relies on direct human observation, an approach that is expensive, logistically complex, and inherently subjective. MoviSound addresses this gap by processing synchronous classroom recordings through a multimodal AI pipeline and delivering structured, explainable feedback to teachers through a web interface.",
+      "p2": "The platform was developed as a decoupled microservices architecture (Python, FastAPI, Docker, Celery) combining end-to-end audio analysis (ASR via Whisper, speaker diarization, paralinguistic feature extraction) with fine-tuned language models (BERT) interpreted through SHAP-based explainability frameworks. The goal is not just classification accuracy, but transparency: teachers need to understand why the system draws the conclusions it does.",
+      "p3": "This platform is the applied result of my doctoral thesis, awarded Summa Cum Laude by the University of Murcia in 2026.",
+      "cta_thesis": "Download Thesis PDF",
+      "cta_github": "View on GitHub"
+    },
+    "architecture": {
+      "heading": "System Architecture",
+      "p1": "Each node in the diagram represents an independent Docker container. The pipeline ingests classroom recordings, processes them through audio analysis and transcription stages, applies multimodal fusion, and exposes results through a REST API consumed by the web frontend.",
+      "caption": "MoviSound microservices architecture"
+    },
+    "demo": {
+      "heading": "Platform Demo",
+      "p1": "The following recording shows the MoviSound web interface processing a real classroom session and visualizing the extracted metrics. A full walkthrough with narration is coming soon."
+    },
+    "pubs": {
+      "heading": "Research Publications",
+      "p1": "The platform was developed across three peer-reviewed papers published in JCR-indexed journals, each covering an incremental phase of the methodology.",
+      "paper1_venue": "Applied Sciences · Jun 2025 · First Author",
+      "paper1_title": "Audio Features in Education: A Systematic Review of Computational Applications and Research Gaps",
+      "paper2_venue": "IEEE Access · Sep 2024 · First Author",
+      "paper2_title": "Exploring AI Techniques for Generalizable Teaching Practice Identification",
+      "paper3_venue": "IEEE Access · Dec 2025 · First Author",
+      "paper3_title": "Explaining Teacher Interventions in SRS-Based Classrooms",
+      "view_pub": "View Publication →"
+    },
+    "back": "← Back to Projects"
+  },
+  "footer": {
+    "copyright": "© {{year}} Federico Pardo.",
+    "hosted": "Hosted on self-managed infrastructure",
+    "source": "View Source"
+  }
+}

@@ -1,24 +1,21 @@
+import { useTranslation, Trans } from 'react-i18next'
+
 function About() {
+  const { t } = useTranslation()
+
   return (
     <section id="about" className="section">
       <div className="container">
-        <h2 className="section-title">About</h2>
+        <h2 className="section-title">{t('about.title')}</h2>
         <div className="about-content">
           <div className="about-image">
             <img src="/assets/perfil.jpg" alt="Federico Pardo" className="profile-img" />
           </div>
           <div className="about-text">
             <p>
-              I hold a PhD in Computer Science and Artificial Intelligence from the University of Murcia,
-              awarded with <strong>Summa Cum Laude</strong> honors. Over the past 4+ years, my work has centered on
-              bridging the gap between cutting-edge AI systems and robust, production-ready software engineering.
+              <Trans i18nKey="about.p1" />
             </p>
-            <p>
-              My expertise focuses on developing multimodal architectures (combining audio processing with
-              Large Language Models), orchestrating scalable data pipelines, and implementing Explainable AI
-              (XAI) frameworks. I prioritize building reliable, high-availability microservices over simply
-              chasing theoretical benchmarks.
-            </p>
+            <p>{t('about.p2')}</p>
           </div>
         </div>
       </div>
