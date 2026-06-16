@@ -1243,6 +1243,18 @@ body {
     flex-wrap: wrap;
 }
 
+.blog-post__date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.blog-post__tags {
+    list-style: none;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
 /* Notion content renderer */
 
 .notion-content {

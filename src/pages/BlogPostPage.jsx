@@ -3,21 +3,26 @@ import { useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getBlogPost } from '../lib/notion'
 import NotionRenderer from '../components/NotionRenderer'
+import { formatDate, TagList } from '../components/BlogMeta'
 
 export default function BlogPostPage() {
   const { slug } = useParams()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [post, setPost] = useState(null)
   const [status, setStatus] = useState('loading')
 
   useEffect(() => {
+    let ignore = false
+    setStatus('loading')
     getBlogPost(slug)
       .then(data => {
+        if (ignore) return
         if (!data) { setStatus('notfound'); return }
         setPost(data)
         setStatus('ok')
       })
-      .catch(() => setStatus('error'))
+      .catch(() => { if (!ignore) setStatus('error') })
+    return () => { ignore = true }
   }, [slug])
 
   return (
@@ -40,20 +45,12 @@ export default function BlogPostPage() {
             <h1 className="blog-post__title">{post.title}</h1>
             <div className="blog-post__meta">
               {post.date && (
-                <time dateTime={post.date} className="blog-card__date">
+                <time dateTime={post.date} className="blog-post__date">
                   {t('blog.posted_on')}{' '}
-                  {new Date(post.date).toLocaleDateString('en-GB', {
-                    year: 'numeric', month: 'long', day: 'numeric',
-                  })}
+                  {formatDate(post.date, i18n.language)}
                 </time>
               )}
-              {post.tags.length > 0 && (
-                <ul className="blog-card__tags" aria-label={t('blog.tags_label')}>
-                  {post.tags.map(tag => (
-                    <li key={tag} className="tag">{tag}</li>
-                  ))}
-                </ul>
-              )}
+              <TagList tags={post.tags} />
             </div>
           </header>
 

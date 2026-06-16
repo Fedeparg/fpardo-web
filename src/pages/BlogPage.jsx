@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getBlogPosts } from '../lib/notion'
+import { formatDate, TagList } from '../components/BlogMeta'
 
 export default function BlogPage() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [posts, setPosts] = useState([])
   const [status, setStatus] = useState('loading')
 
@@ -38,18 +39,10 @@ export default function BlogPage() {
                 <div className="blog-card__meta">
                   {post.date && (
                     <time dateTime={post.date} className="blog-card__date">
-                      {new Date(post.date).toLocaleDateString('en-GB', {
-                        year: 'numeric', month: 'long', day: 'numeric',
-                      })}
+                      {formatDate(post.date, i18n.language)}
                     </time>
                   )}
-                  {post.tags.length > 0 && (
-                    <ul className="blog-card__tags" aria-label={t('blog.tags_label')}>
-                      {post.tags.map(tag => (
-                        <li key={tag} className="tag">{tag}</li>
-                      ))}
-                    </ul>
-                  )}
+                  <TagList tags={post.tags} />
                 </div>
                 <h2 className="blog-card__title">
                   <Link to={`/blog/${post.slug}`}>{post.title}</Link>
