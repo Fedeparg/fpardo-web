@@ -91,6 +91,7 @@ function Nav() {
               <NavLink to="/about" onClick={close}>{t('nav.about')}</NavLink>
               <NavLink to="/projects" onClick={close}>{t('nav.projects')}</NavLink>
               <NavLink to="/publications" onClick={close}>{t('nav.publications')}</NavLink>
+              <NavLink to="/blog" onClick={close}>{t('nav.blog')}</NavLink>
             </div>
 
             <div className="nav-end">

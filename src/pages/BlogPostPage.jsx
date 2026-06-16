@@ -23,7 +23,7 @@ export default function BlogPostPage() {
   return (
     <main className="page-container">
       <div className="blog-post-back">
-        <Link to="/blog">← {t('blog.back')}</Link>
+        <Link to="/blog">{'← '}{t('blog.back')}</Link>
       </div>
 
       {status === 'loading' && (

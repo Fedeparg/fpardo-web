@@ -8,6 +8,8 @@ import AboutPage from './pages/AboutPage.jsx'
 import PublicationsPage from './pages/PublicationsPage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
 import PhdProjectPage from './pages/projects/PhdProjectPage.jsx'
+import BlogPage from './pages/BlogPage.jsx'
+import BlogPostPage from './pages/BlogPostPage.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -32,6 +34,8 @@ function App() {
         <Route path="/publications" element={<PublicationsPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/phd" element={<PhdProjectPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
       </Routes>
       <Footer />
     </>

@@ -3,6 +3,7 @@
     "about": "About",
     "projects": "Projects",
     "publications": "Publications",
+    "blog": "Blog",
     "open_menu": "Open navigation menu",
     "close_menu": "Close navigation menu"
   },
@@ -140,6 +141,16 @@
       "view_pub": "View Publication →"
     },
     "back": "← Back to Projects"
+  },
+  "blog": {
+    "title": "Blog",
+    "loading": "Loading...",
+    "error": "Failed to load posts.",
+    "empty": "No posts yet.",
+    "read_more": "Read more",
+    "back": "Back to blog",
+    "posted_on": "Posted on",
+    "tags_label": "Tags"
   },
   "footer": {
     "copyright": "© {{year}} Federico Pardo.",
