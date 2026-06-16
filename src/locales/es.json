@@ -28,14 +28,9 @@
       "meta": "Universidad de Murcia · Mayo 2023 – Mayo 2026",
       "description": "Diseñé y desplegué una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) para inferencia de IA multimodal, optimizando la latencia de procesamiento en infraestructura local y en la nube. Construí pipelines de procesamiento de audio extremo a extremo integrando ASR (Whisper), diarización de hablantes, extracción de características paralingüísticas y embeddings vectoriales semánticos (FAISS). Apliqué marcos de IA Explicable (XAI) utilizando valores SHAP para interpretar modelos BERT ajustados, logrando transparencia total del sistema. Publiqué 5 artículos de investigación de alto impacto como primer autor en venues como IEEE Access y Applied Sciences."
     },
-    "webhelp": {
-      "role": "Especialista en Soporte Técnico Cloud (GCP)",
-      "meta": "Webhelp (Google Cloud Project) · Ago 2022 – Abr 2023",
-      "description": "Proporcioné soporte técnico y arquitectónico L2 a clientes empresariales en Google Cloud Platform. Gestioné la resolución de problemas complejos en cargas de trabajo de producción que involucran Compute Engine, redes VPC, IAM y Google Kubernetes Engine (GKE). Colaboré con equipos SRE para analizar y resolver degradaciones de infraestructura en la causa raíz."
-    },
     "centic": {
       "role": "Científico de Datos e Ingeniero de Machine Learning",
-      "meta": "CENTIC (Centro Tecnológico) · Jun 2021 – Ago 2022",
+      "meta": "CENTIC (Centro Tecnológico) · Jun 2021 – May 2023",
       "description": "Desplegué una CNN industrial en tiempo real para detección automática de defectos, alcanzando un 98% de precisión y latencia de inferencia inferior a 100 ms en hardware embebido con recursos limitados. Desarrollé sistemas NLP basados en LSTM optimizados para análisis de complejidad semántica. Construí y mantuve pipelines ETL automatizados y multi-fuente para activos de datos tabulares, de imagen y audio en bruto."
     }
   },
