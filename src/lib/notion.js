@@ -9,11 +9,24 @@ async function notionFetch(path, options = {}) {
   return res.json()
 }
 
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+}
+
 function mapPageMeta(page) {
+  const title = page.properties.Title?.title?.[0]?.plain_text ?? ''
+  const slug = page.properties.Slug?.rich_text?.[0]?.plain_text || slugify(title)
   return {
     id: page.id,
-    title: page.properties.Title?.title?.[0]?.plain_text ?? '',
-    slug: page.properties.Slug?.rich_text?.[0]?.plain_text ?? '',
+    title,
+    slug,
     date: page.properties.Date?.date?.start ?? null,
     tags: page.properties.Tags?.multi_select?.map(t => t.name) ?? [],
   }
@@ -37,15 +50,13 @@ export async function getBlogPost(slug) {
   const data = await notionFetch(`databases/${DATABASE_ID}/query`, {
     method: 'POST',
     body: JSON.stringify({
-      filter: {
-        and: [
-          { property: 'Published', checkbox: { equals: true } },
-          { property: 'Slug', rich_text: { equals: slug } },
-        ],
-      },
+      filter: { property: 'Published', checkbox: { equals: true } },
     }),
   })
-  const page = data.results[0]
+  const page = data.results.find(p => {
+    const meta = mapPageMeta(p)
+    return meta.slug === slug
+  })
   if (!page) return null
 
   const blocks = await notionFetch(`blocks/${page.id}/children`)

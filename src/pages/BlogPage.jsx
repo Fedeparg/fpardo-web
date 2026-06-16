@@ -16,9 +16,10 @@ export default function BlogPage() {
   }, [])
 
   return (
-    <main className="page-container">
+    <div className="page">
       <section className="section">
-        <h1 className="section-title">{t('blog.title')}</h1>
+        <div className="container">
+        <h2 className="section-title">{t('blog.title')}</h2>
 
         {status === 'loading' && (
           <p className="blog-status">{t('blog.loading')}</p>
@@ -45,19 +46,24 @@ export default function BlogPage() {
                   <TagList tags={post.tags} />
                 </div>
                 <h2 className="blog-card__title">
-                  <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                  {post.slug
+                    ? <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                    : post.title}
                 </h2>
                 {post.excerpt && (
                   <p className="blog-card__excerpt">{post.excerpt}</p>
                 )}
-                <Link to={`/blog/${post.slug}`} className="blog-card__read-more">
-                  {t('blog.read_more')}
-                </Link>
+                {post.slug && (
+                  <Link to={`/blog/${post.slug}`} className="blog-card__read-more">
+                    {t('blog.read_more')}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
         )}
+        </div>
       </section>
-    </main>
+    </div>
   )
 }

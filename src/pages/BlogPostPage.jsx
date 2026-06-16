@@ -26,37 +26,41 @@ export default function BlogPostPage() {
   }, [slug])
 
   return (
-    <main className="page-container">
-      <div className="blog-post-back">
-        <Link to="/blog">{'← '}{t('blog.back')}</Link>
-      </div>
+    <div className="page">
+      <section className="section">
+        <div className="container">
+          <div className="blog-post-back">
+            <Link to="/blog">{'← '}{t('blog.back')}</Link>
+          </div>
 
-      {status === 'loading' && (
-        <p className="blog-status">{t('blog.loading')}</p>
-      )}
+          {status === 'loading' && (
+            <p className="blog-status">{t('blog.loading')}</p>
+          )}
 
-      {(status === 'error' || status === 'notfound') && (
-        <p className="blog-status blog-status--error">{t('blog.error')}</p>
-      )}
+          {(status === 'error' || status === 'notfound') && (
+            <p className="blog-status blog-status--error">{t('blog.error')}</p>
+          )}
 
-      {status === 'ok' && post && (
-        <article className="blog-post">
-          <header className="blog-post__header">
-            <h1 className="blog-post__title">{post.title}</h1>
-            <div className="blog-post__meta">
-              {post.date && (
-                <time dateTime={post.date} className="blog-post__date">
-                  {t('blog.posted_on')}{' '}
-                  {formatDate(post.date, i18n.language)}
-                </time>
-              )}
-              <TagList tags={post.tags} />
-            </div>
-          </header>
+          {status === 'ok' && post && (
+            <article className="blog-post">
+              <header className="blog-post__header">
+                <h1 className="blog-post__title">{post.title}</h1>
+                <div className="blog-post__meta">
+                  {post.date && (
+                    <time dateTime={post.date} className="blog-post__date">
+                      {t('blog.posted_on')}{' '}
+                      {formatDate(post.date, i18n.language)}
+                    </time>
+                  )}
+                  <TagList tags={post.tags} />
+                </div>
+              </header>
 
-          <NotionRenderer blocks={post.blocks} />
-        </article>
-      )}
-    </main>
+              <NotionRenderer blocks={post.blocks} />
+            </article>
+          )}
+        </div>
+      </section>
+    </div>
   )
 }
