@@ -10,6 +10,7 @@ services:
       - "8081:80"
     environment:
       - TZ=Europe/Paris
+      - NOTION_TOKEN=${NOTION_TOKEN}
 
 networks:
   services_net:
