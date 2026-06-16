@@ -15,9 +15,11 @@ export default defineConfig(({ mode }) => {
           target: 'https://api.notion.com/v1',
           changeOrigin: true,
           rewrite: path => path.replace(/^\/api\/notion/, ''),
-          headers: {
-            Authorization: `Bearer ${env.NOTION_TOKEN}`,
-            'Notion-Version': '2022-06-28',
+          configure: (proxy) => {
+            proxy.on('proxyReq', (proxyReq) => {
+              proxyReq.setHeader('Authorization', `Bearer ${env.NOTION_TOKEN}`)
+              proxyReq.setHeader('Notion-Version', '2022-06-28')
+            })
           },
         },
       },
