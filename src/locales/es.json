@@ -3,8 +3,11 @@
     "about": "Sobre mí",
     "projects": "Proyectos",
     "publications": "Publicaciones",
+    "blog": "Blog",
     "open_menu": "Abrir menú de navegación",
-    "close_menu": "Cerrar menú de navegación"
+    "close_menu": "Cerrar menú de navegación",
+    "lang_switch_to_en": "Cambiar a inglés",
+    "lang_switch_to_es": "Cambiar a español"
   },
   "hero": {
     "subtitle": "Ingeniero de IA · Doctor en Informática e IA",
@@ -140,6 +143,16 @@
       "view_pub": "Ver Publicación →"
     },
     "back": "← Volver a Proyectos"
+  },
+  "blog": {
+    "title": "Blog",
+    "loading": "Cargando...",
+    "error": "Error al cargar las entradas.",
+    "empty": "Aún no hay entradas.",
+    "read_more": "Leer más",
+    "back": "Volver al blog",
+    "posted_on": "Publicado el",
+    "tags_label": "Etiquetas"
   },
   "footer": {
     "copyright": "© {{year}} Federico Pardo.",
