@@ -3,7 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 function LangToggle() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const isEs = i18n.language.startsWith('es')
 
   function toggle() {
@@ -16,7 +16,7 @@ function LangToggle() {
     <button
       className="lang-toggle"
       onClick={toggle}
-      aria-label={isEs ? 'Switch to English' : 'Cambiar a español'}
+      aria-label={isEs ? t('nav.lang_switch_to_en') : t('nav.lang_switch_to_es')}
     >
       <span className={isEs ? 'lang-flag--inactive' : 'lang-flag--active'}>{'🇬🇧'}</span>
       <span className={isEs ? 'lang-flag--active' : 'lang-flag--inactive'}>{'🇪🇸'}</span>
