@@ -1,7 +1,7 @@
 export const skillCategories = [
   {
     titleKey: 'skills.categories.languages',
-    skills: ['Python', 'Java', 'C', 'C++', 'JavaScript'],
+    skills: ['Python', 'Java', 'C', 'C++', 'JavaScript', 'Go'],
   },
   {
     titleKey: 'skills.categories.ai',

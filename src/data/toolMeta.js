@@ -4,13 +4,14 @@ import {
   SiTensorflow, SiKubernetes, SiLinux, SiGooglecloud,
   SiRedis, SiPostgresql, SiGithubactions, SiNginx,
   SiNumpy, SiPandas, SiScikitlearn, SiJupyter, SiGit,
-  SiC, SiCplusplus, SiJavascript, SiMongodb, SiLangchain, SiOllama,
+  SiC, SiCplusplus, SiJavascript, SiMongodb, SiLangchain, SiOllama, SiGo,
 } from 'react-icons/si'
 import { FaJava } from 'react-icons/fa'
 
 export const toolMeta = {
-  Python:           { icon: SiPython,         url: 'https://python.org' },
+  Python:           { icon: SiPython,          url: 'https://python.org' },
   Java:             { icon: FaJava,            url: 'https://java.com' },
+  Go:               { icon: SiGo,              url: 'https://go.dev' },
   C:                { icon: SiC,               url: 'https://en.wikipedia.org/wiki/C_(programming_language)' },
   'C++':            { icon: SiCplusplus,       url: 'https://isocpp.org' },
   JavaScript:       { icon: SiJavascript,      url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
