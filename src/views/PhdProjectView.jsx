@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+'use client'
+
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
-function PhdProjectPage() {
+export default function PhdProjectView() {
   const { t } = useTranslation()
 
   return (
@@ -105,12 +107,10 @@ function PhdProjectPage() {
         </div>
 
         <div className="article-footer">
-          <Link to="/projects" className="article-back">{t('phd.back')}</Link>
+          <Link href="/projects" className="article-back">{t('phd.back')}</Link>
         </div>
 
       </article>
     </div>
   )
 }
-
-export default PhdProjectPage

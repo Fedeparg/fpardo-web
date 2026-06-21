@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom'
+'use client'
+
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects.js'
 import ToolTag from '../components/ToolTag.jsx'
 
-function ProjectsPage() {
+export default function ProjectsView() {
   const { t } = useTranslation()
 
   return (
@@ -15,12 +17,12 @@ function ProjectsPage() {
 
             {projects.map(project => (
               <div key={project.id} className="project-card">
-                <Link to={project.path} className="project-visual">
+                <Link href={project.path} className="project-visual">
                   <img src={project.cover} alt={t(project.titleKey)} className="project-cover-img" />
                 </Link>
                 <div className="project-info">
                   <p className="project-category">{t(project.categoryKey)} · {t(project.periodKey)}</p>
-                  <Link to={project.path} className="project-title-link">
+                  <Link href={project.path} className="project-title-link">
                     <h3 className="project-title">{t(project.titleKey)}</h3>
                   </Link>
                   <p className="project-description">{t(project.descriptionKey)}</p>
@@ -29,7 +31,7 @@ function ProjectsPage() {
                       <ToolTag key={tag} name={tag} />
                     ))}
                   </div>
-                  <Link to={project.path} className="btn btn-secondary project-cta">{t('projects.view')}</Link>
+                  <Link href={project.path} className="btn btn-secondary project-cta">{t('projects.view')}</Link>
                 </div>
               </div>
             ))}
@@ -40,5 +42,3 @@ function ProjectsPage() {
     </div>
   )
 }
-
-export default ProjectsPage

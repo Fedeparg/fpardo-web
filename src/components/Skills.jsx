@@ -1,3 +1,5 @@
+'use client'
+
 import { useTranslation } from 'react-i18next'
 import { skillCategories } from '../data/skills.js'
 import { toolMeta } from '../data/toolMeta.js'

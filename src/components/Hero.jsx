@@ -1,3 +1,5 @@
+'use client'
+
 import { FaLinkedin } from 'react-icons/fa'
 import { SiGithub, SiX, SiYoutube } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'

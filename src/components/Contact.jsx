@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { FaLinkedin } from 'react-icons/fa'
 import { SiGithub } from 'react-icons/si'

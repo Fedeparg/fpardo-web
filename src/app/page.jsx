@@ -1,7 +1,7 @@
 import Hero from '../components/Hero.jsx'
 import Contact from '../components/Contact.jsx'
 
-function Home() {
+export default function HomePage() {
   return (
     <>
       <Hero />
@@ -9,5 +9,3 @@ function Home() {
     </>
   )
 }
-
-export default Home

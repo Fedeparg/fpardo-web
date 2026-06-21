@@ -1,5 +1,8 @@
+'use client'
+
 import { useState, useEffect } from 'react'
-import { NavLink, Link, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 
 function LangToggle() {
@@ -21,6 +24,21 @@ function LangToggle() {
       <span className={isEs ? 'lang-flag--inactive' : 'lang-flag--active'}>{'🇬🇧'}</span>
       <span className={isEs ? 'lang-flag--active' : 'lang-flag--inactive'}>{'🇪🇸'}</span>
     </button>
+  )
+}
+
+function NavItem({ href, onClick, children }) {
+  const pathname = usePathname()
+  const active = pathname === href || pathname.startsWith(`${href}/`)
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      className={active ? 'active' : undefined}
+      aria-current={active ? 'page' : undefined}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -46,11 +64,11 @@ function CloseIcon() {
 function Nav() {
   const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
-  const location = useLocation()
+  const pathname = usePathname()
 
   useEffect(() => {
     setIsOpen(false)
-  }, [location])
+  }, [pathname])
 
   useEffect(() => {
     if (!isOpen) return
@@ -84,14 +102,14 @@ function Nav() {
     <>
       <nav className={`nav${isOpen ? ' nav--open' : ''}`}>
         <div className="container">
-          <Link to="/" className="logo">{'FP'}</Link>
+          <Link href="/" className="logo">{'FP'}</Link>
 
           <div className="nav-right">
             <div className="nav-links" id="nav-menu">
-              <NavLink to="/about" onClick={close}>{t('nav.about')}</NavLink>
-              <NavLink to="/projects" onClick={close}>{t('nav.projects')}</NavLink>
-              <NavLink to="/publications" onClick={close}>{t('nav.publications')}</NavLink>
-              <NavLink to="/blog" onClick={close}>{t('nav.blog')}</NavLink>
+              <NavItem href="/about" onClick={close}>{t('nav.about')}</NavItem>
+              <NavItem href="/projects" onClick={close}>{t('nav.projects')}</NavItem>
+              <NavItem href="/publications" onClick={close}>{t('nav.publications')}</NavItem>
+              <NavItem href="/blog" onClick={close}>{t('nav.blog')}</NavItem>
             </div>
 
             <div className="nav-end">

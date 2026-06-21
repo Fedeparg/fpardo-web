@@ -1,3 +1,5 @@
+'use client'
+
 import { useTranslation } from 'react-i18next'
 import { pubItems } from '../data/publications.js'
 
