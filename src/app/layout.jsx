@@ -25,13 +25,46 @@ export const metadata = {
     title: 'Federico Pardo · AI Engineer',
     description: DESCRIPTION,
     url: SITE_URL,
+    images: ['/opengraph-image'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/opengraph-image'],
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      name: 'Federico Pardo',
+      url: SITE_URL,
+      jobTitle: 'AI Engineer',
+      description: DESCRIPTION,
+      sameAs: [
+        'https://linkedin.com/in/federico-pardog',
+        'https://github.com/fedeparg',
+        'https://x.com/fpardo_98',
+        'https://www.youtube.com/@fpardo_98',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      name: 'Federico Pardo',
+      url: SITE_URL,
+    },
+  ],
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Providers>
           <Nav />
           {children}

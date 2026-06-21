@@ -1,17 +1,15 @@
 import PhdProjectView from '../../../views/PhdProjectView.jsx'
+import { pageMetadata } from '../../../lib/seo.js'
 
 const DESCRIPTION =
   'MoviSound, a multimodal AI platform for emotion-aware music recommendation built during Federico Pardo PhD in Computer Science and AI.'
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'MoviSound',
   description: DESCRIPTION,
-  openGraph: {
-    type: 'article',
-    title: 'MoviSound · Federico Pardo',
-    description: DESCRIPTION,
-  },
-}
+  path: '/projects/phd',
+  type: 'article',
+})
 
 export default function PhdProjectPage() {
   return <PhdProjectView />

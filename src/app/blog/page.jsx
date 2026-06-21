@@ -1,15 +1,12 @@
 import BlogListView from '../../views/BlogListView.jsx'
 import { getBlogPosts } from '../../lib/notion.js'
+import { pageMetadata } from '../../lib/seo.js'
 
 export const dynamic = 'force-dynamic'
 
 const DESCRIPTION = 'Writing by Federico Pardo on AI engineering, research, and building systems.'
 
-export const metadata = {
-  title: 'Blog',
-  description: DESCRIPTION,
-  openGraph: { title: 'Blog · Federico Pardo', description: DESCRIPTION },
-}
+export const metadata = pageMetadata({ title: 'Blog', description: DESCRIPTION, path: '/blog' })
 
 export default async function BlogPage() {
   let posts = []

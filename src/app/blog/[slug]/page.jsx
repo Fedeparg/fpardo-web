@@ -10,13 +10,15 @@ export async function generateMetadata({ params }) {
   if (!post) return { title: 'Blog' }
 
   const description = post.excerpt || undefined
-  const images = post.cover ? [post.cover] : undefined
+  const images = post.cover ? [post.cover] : ['/opengraph-image']
 
   return {
     title: post.title,
     description,
+    alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: 'article',
+      siteName: 'Federico Pardo',
       title: post.title,
       description,
       url: `/blog/${post.slug}`,
@@ -32,14 +34,35 @@ export async function generateMetadata({ params }) {
   }
 }
 
+const SITE_URL = 'https://fpardo.net'
+
+function articleJsonLd(post) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt || undefined,
+    datePublished: post.date || undefined,
+    image: post.cover || undefined,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    author: { '@type': 'Person', name: 'Federico Pardo', url: SITE_URL },
+  }
+}
+
 export default async function BlogPostPage({ params }) {
   const post = await getBlogPost(params.slug)
   if (!post) notFound()
 
   const { blocks, ...meta } = post
   return (
-    <BlogPostView post={meta}>
-      <NotionRenderer blocks={blocks} />
-    </BlogPostView>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd(post)) }}
+      />
+      <BlogPostView post={meta}>
+        <NotionRenderer blocks={blocks} />
+      </BlogPostView>
+    </>
   )
 }
