@@ -5,7 +5,7 @@ import globals from 'globals'
 export default [
   js.configs.recommended,
   {
-    ignores: ['.next/**', 'node_modules/**'],
+    ignores: ['.next/**', 'node_modules/**', 'dist/**', '.vite/**', '.claude/**'],
   },
   {
     files: ['src/**/*.{js,jsx}'],
