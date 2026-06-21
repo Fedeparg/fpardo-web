@@ -1,13 +1,18 @@
+'use client'
+
 import { useTranslation } from 'react-i18next'
 
 const LOCALE_MAP = { en: 'en-GB', es: 'es-ES' }
 
 export function formatDate(dateStr, language) {
   const locale = LOCALE_MAP[language] ?? 'en-GB'
+  // Format in UTC so the server render and the client hydration agree
+  // regardless of their respective timezones (the value is a date, not a time).
   return new Date(dateStr).toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   })
 }
 

@@ -149,6 +149,11 @@
     "posted_on": "Publicado el",
     "tags_label": "Etiquetas"
   },
+  "notfound": {
+    "title": "Página no encontrada",
+    "message": "La página que buscas no existe o se ha movido.",
+    "home": "Volver al inicio"
+  },
   "footer": {
     "copyright": "© {{year}} Federico Pardo.",
     "hosted": "Alojada en infraestructura propia",

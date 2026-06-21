@@ -149,6 +149,11 @@
     "posted_on": "Posted on",
     "tags_label": "Tags"
   },
+  "notfound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home"
+  },
   "footer": {
     "copyright": "© {{year}} Federico Pardo.",
     "hosted": "Hosted on self-managed infrastructure",
