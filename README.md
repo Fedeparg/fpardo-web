@@ -4,8 +4,9 @@ Minimalist personal website showcasing AI research and engineering work.
 
 ## Tech Stack
 
-- Vite + React
-- Self-hosted infrastructure (Docker + Nginx reverse proxy)
+- Next.js (App Router) + React
+- Blog powered by Notion as a headless CMS (fetched server-side)
+- Self-hosted infrastructure (Docker, Nginx Proxy Manager reverse proxy)
 - Formspree for contact form
 
 ## Local Development
@@ -18,41 +19,44 @@ cd fpardo-web
 # Install dependencies
 npm install
 
+# Provide the Notion integration token used by the blog
+cp .env.example .env.local
+# then edit .env.local and set NOTION_TOKEN=...
+
 # Start dev server
 npm run dev
-# Open http://localhost:5173
+# Open http://localhost:3000
 ```
 
 ## Build
 
 ```bash
-npm run build
-# Output in dist/
+npm run build   # runs eslint + vitest, then next build
+npm start       # serves the production build on http://localhost:3000
 ```
 
 ## Project Structure
 
 ```
 fpardo-web/
-├── index.html              # Vite entry point
-├── vite.config.js
+├── next.config.js          # Next.js config (standalone output)
 ├── package.json
 ├── src/
-│   ├── main.jsx            # React root
+│   ├── i18n.js             # react-i18next setup (EN/ES)
 │   ├── index.css           # Global styles
-│   ├── App.jsx             # Root component
-│   └── components/
-│       ├── Nav.jsx
-│       ├── Hero.jsx
-│       ├── About.jsx
-│       ├── Experience.jsx
-│       ├── Publications.jsx
-│       ├── Contact.jsx
-│       └── Footer.jsx
-├── assets/
-│   ├── perfil.jpg
-│   ├── cv_federico_pardo.pdf
-│   └── phd_federico_pardo.pdf
+│   ├── app/                # App Router: layout, providers and routes
+│   │   ├── layout.jsx
+│   │   ├── page.jsx        # Home
+│   │   ├── about/
+│   │   ├── projects/
+│   │   ├── publications/
+│   │   └── blog/           # Server-rendered blog with Notion + Open Graph
+│   ├── views/              # Page-level client compositions
+│   ├── components/         # Nav, Hero, Footer, NotionRenderer, ...
+│   ├── data/               # Static data (projects, experience, skills, ...)
+│   ├── lib/notion.js       # Server-side Notion data layer
+│   └── locales/            # en.json / es.json
+├── public/assets/          # Images, CV, project files
 └── phd.html                # Static page served at phd.fpardo.net
 ```
 

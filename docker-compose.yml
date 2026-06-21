@@ -7,7 +7,7 @@ services:
     networks:
       - services_net
     ports:
-      - "8081:80"
+      - "8081:3000"
     environment:
       - TZ=Europe/Paris
       - NOTION_TOKEN=${NOTION_TOKEN}
