@@ -10,7 +10,7 @@ export default function SextanteProjectView() {
     <div className="page">
       <article className="article">
 
-        <div className="article-header-img">
+        <div className="article-header-img article-header-img--bleed">
           <img src="/assets/projects/sextante/sextante_logo.webp" alt="Sextante" />
         </div>
 

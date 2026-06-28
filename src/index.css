@@ -763,6 +763,13 @@ body {
     box-sizing: border-box;
 }
 
+/* Portada a sangre (sin el marco cremita): para capturas/heroes en vez de logos. */
+.project-cover-img--bleed {
+    object-fit: cover;
+    background: transparent;
+    padding: 0;
+}
+
 .project-category {
     color: var(--accent);
     font-size: 0.85rem;
@@ -831,6 +838,14 @@ body {
     background: #f5f0e8;
     border-radius: 12px;
     padding: 1rem 2rem;
+}
+
+/* Cabecera a sangre (sin marco cremita): la portada es una captura, no un logo. */
+.article-header-img--bleed img {
+    max-height: 150px;
+    max-width: 460px;
+    background: transparent;
+    padding: 0;
 }
 
 .article-eyebrow {

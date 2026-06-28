@@ -18,7 +18,11 @@ export default function ProjectsView() {
             {projects.map(project => (
               <div key={project.id} className="project-card">
                 <Link href={project.path} className="project-visual">
-                  <img src={project.cover} alt={t(project.titleKey)} className="project-cover-img" />
+                  <img
+                    src={project.cover}
+                    alt={t(project.titleKey)}
+                    className={project.framedCover === false ? 'project-cover-img project-cover-img--bleed' : 'project-cover-img'}
+                  />
                 </Link>
                 <div className="project-info">
                   <p className="project-category">{t(project.categoryKey)} · {t(project.periodKey)}</p>
