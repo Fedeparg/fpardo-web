@@ -5,6 +5,7 @@ import {
   SiRedis, SiPostgresql, SiGithubactions, SiNginx,
   SiNumpy, SiPandas, SiScikitlearn, SiJupyter, SiGit,
   SiC, SiCplusplus, SiJavascript, SiMongodb, SiLangchain, SiOllama, SiGo,
+  SiNextdotjs, SiNestjs, SiTypescript, SiDrizzle,
 } from 'react-icons/si'
 import { FaJava } from 'react-icons/fa'
 
@@ -39,4 +40,8 @@ export const toolMeta = {
   HuggingFace:      { icon: SiHuggingface,     url: 'https://huggingface.co' },
   LangChain:        { icon: SiLangchain,       url: 'https://langchain.com' },
   Ollama:           { icon: SiOllama,          url: 'https://ollama.com' },
+  'Next.js':        { icon: SiNextdotjs,       url: 'https://nextjs.org' },
+  NestJS:           { icon: SiNestjs,          url: 'https://nestjs.com' },
+  TypeScript:       { icon: SiTypescript,      url: 'https://www.typescriptlang.org' },
+  Drizzle:          { icon: SiDrizzle,         url: 'https://orm.drizzle.team' },
 }

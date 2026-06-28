@@ -6,7 +6,7 @@ const SITE_URL = 'https://fpardo.net'
 export const dynamic = 'force-dynamic'
 
 export default async function sitemap() {
-  const staticPaths = ['', '/about', '/projects', '/projects/phd', '/publications', '/blog']
+  const staticPaths = ['', '/about', '/projects', '/projects/sextante', '/projects/phd', '/publications', '/blog']
   const staticRoutes = staticPaths.map(path => ({
     url: `${SITE_URL}${path}`,
     lastModified: new Date(),

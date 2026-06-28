@@ -98,12 +98,57 @@
   "projects": {
     "title": "Proyectos",
     "view": "Ver Proyecto →",
+    "sextante": {
+      "title": "Sextante",
+      "category": "Producto de Finanzas Personales",
+      "period": "2026 · En producción",
+      "description": "Un producto serio de finanzas personales construido para el sistema bancario y fiscal español: una suite de calculadoras de FIRE y finanzas personales (IRPF, patrimonio, donaciones y Seguridad Social con los tramos reales de 2026), una cartera agregada con cotizaciones de mercado al día y P&L, y un servidor MCP remoto con OAuth 2.1 para que cada usuario conecte su propio asistente de IA y lea y escriba sus datos. Bilingüe ES/EN."
+    },
     "phd": {
       "title": "MoviSound (PhD)",
       "category": "Plataforma de Investigación",
       "period": "Mayo 2023 – Mayo 2026",
       "description": "Una plataforma de IA multimodal que procesa grabaciones de aula para dar a los docentes retroalimentación objetiva y automatizada sobre su práctica. Combina pipelines de audio extremo a extremo (ASR, diarización de hablantes, extracción de características paralingüísticas) con modelos de texto basados en BERT interpretados mediante marcos de explicabilidad SHAP para generar retroalimentación transparente y automatizada."
     }
+  },
+  "sextante": {
+    "eyebrow": "Producto de Finanzas Personales · En producción · sextante.fpardo.net",
+    "title": "Sextante",
+    "subtitle": "Un producto serio de finanzas personales para España: calculadoras de FIRE y fiscalidad, una cartera agregada con cotizaciones al día y un servidor MCP remoto que te permite conectar tu propio asistente de IA a tus datos financieros reales.",
+    "about": {
+      "heading": "Sobre el Proyecto",
+      "p1": "La mayoría de las calculadoras financieras son genéricas y están pensadas para Estados Unidos, así que despistan a cualquiera que planifique sus finanzas con las reglas españolas. Sextante está construido específicamente para el sistema bancario y fiscal español: una suite de calculadoras de FIRE (independencia financiera) y finanzas personales que modelan IRPF, patrimonio, donaciones y Seguridad Social con los tramos reales de 2026. Todo es bilingüe (castellano e inglés), con tema claro y oscuro, TypeScript estricto y accesibilidad de principio a fin.",
+      "p2": "Sobre las calculadoras, Sextante ofrece una cartera agregada: el usuario añade manualmente posiciones repartidas entre distintos bancos y brokers y sigue todo su patrimonio en una sola vista, con cotizaciones de mercado al día, conversión de divisas y P&L. Una wiki «Aprende» lo completa con guías financieras claras sobre interés compuesto, hipotecas, inversión y FIRE.",
+      "p3": "Sextante es un producto real, no un proyecto de aprendizaje: está en producción, es self-hosted y está diseñado de extremo a extremo con el RGPD en mente (exportación de datos, borrado de cuenta en cascada y gestión de apps conectadas).",
+      "cta_visit": "Visitar Sextante →"
+    },
+    "mcp": {
+      "heading": "El Servidor MCP — Trae tu propia IA",
+      "p1": "La característica estrella de Sextante es un servidor MCP (Model Context Protocol) remoto protegido con OAuth 2.1 completo: Dynamic Client Registration, PKCE, audience binding, tokens hasheados y consentimiento y revocación por cliente. Permite al usuario conectar su propio asistente de IA —Claude, ChatGPT o cualquier cliente compatible con MCP— para leer y escribir su cartera real de forma segura.",
+      "p2": "La filosofía es simple: tú pones el LLM, Sextante expone tus datos de forma segura. En lugar de añadir otro chatbot más al producto, convierte una app de finanzas personales en una fuente de datos segura sobre la que cualquier asistente puede razonar — la parte del proyecto de la que estoy más orgulloso técnicamente."
+    },
+    "features": {
+      "heading": "Qué Incluye",
+      "p1": "Cuatro pilares, todos compartiendo el mismo núcleo de cálculo, sistema de diseño y capa de i18n:",
+      "f1_label": "Calculadoras",
+      "f1_title": "Motor fiscal y de FIRE español",
+      "f1_desc": "Calculadoras de FIRE y finanzas personales con un motor fiscal español real — IRPF, patrimonio, donaciones y Seguridad Social sobre los tramos de 2026.",
+      "f2_label": "Cartera",
+      "f2_title": "Patrimonio agregado",
+      "f2_desc": "Posiciones añadidas manualmente desde cualquier banco o broker, unificadas con cotizaciones al día, conversión de divisas y P&L.",
+      "f3_label": "Integración",
+      "f3_title": "MCP remoto + OAuth 2.1",
+      "f3_desc": "Conecta tu propio asistente de IA para leer y escribir tu cartera, protegido por OAuth 2.1 completo con consentimiento y revocación por cliente.",
+      "f4_label": "Aprende",
+      "f4_title": "Wiki «Aprende»",
+      "f4_desc": "Guías financieras claras y prácticas sobre interés compuesto, hipotecas, inversión y el camino hacia la independencia financiera."
+    },
+    "stack": {
+      "heading": "Stack e Infraestructura",
+      "p1": "El frontend y el BFF corren sobre Next.js 16 (App Router, i18n con next-intl); la API es un servicio NestJS 11 independiente respaldado por Drizzle ORM sobre PostgreSQL. Todo está contenedorizado con Docker Compose, es self-hosted y se despliega con GitHub Actions sobre un runner self-hosted detrás de nginx.",
+      "p2": "La autenticación usa magic links sin contraseña con un JWT en una cookie HttpOnly. Todo el producto está construido con un listón de ingeniería senior: TypeScript estricto sin código muerto, tema claro/oscuro completo, accesibilidad y un modelo de datos con el RGPD por delante."
+    },
+    "back": "← Volver a Proyectos"
   },
   "phd": {
     "eyebrow": "Plataforma de Investigación Doctoral · Universidad de Murcia · Mayo 2023 – Mayo 2026",

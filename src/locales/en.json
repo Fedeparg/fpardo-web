@@ -98,12 +98,57 @@
   "projects": {
     "title": "Projects",
     "view": "View Project →",
+    "sextante": {
+      "title": "Sextante",
+      "category": "Personal Finance Product",
+      "period": "2026 · In production",
+      "description": "A serious personal-finance product built for the Spanish banking and tax system: a suite of FIRE and personal-finance calculators (IRPF, wealth tax, gift tax and Social Security with real 2026 brackets), an aggregated portfolio with live market quotes and P&L, and a remote MCP server with OAuth 2.1 so users can connect their own AI assistant to read and write their data. Bilingual ES/EN."
+    },
     "phd": {
       "title": "MoviSound (PhD)",
       "category": "Research Platform",
       "period": "May 2023 – May 2026",
       "description": "A multimodal AI platform that processes classroom recordings to give teachers objective, automated feedback on their practice. Combines end-to-end audio pipelines (ASR, speaker diarization, paralinguistic feature extraction) with BERT-based text models interpreted through SHAP explainability frameworks to generate transparent, automated feedback for teachers."
     }
+  },
+  "sextante": {
+    "eyebrow": "Personal Finance Product · In production · sextante.fpardo.net",
+    "title": "Sextante",
+    "subtitle": "A serious personal-finance product for Spain: FIRE and tax calculators, an aggregated portfolio with live quotes, and a remote MCP server that lets you plug your own AI assistant into your real financial data.",
+    "about": {
+      "heading": "About the Project",
+      "p1": "Most financial calculators are generic and US-centric, so they quietly mislead anyone planning their finances under Spanish rules. Sextante is built specifically for the Spanish banking and tax system: a suite of FIRE (financial independence) and personal-finance calculators that model IRPF, wealth tax, gift tax and Social Security using the real 2026 brackets. Everything is bilingual (Spanish and English), with light and dark themes, strict TypeScript and accessibility throughout.",
+      "p2": "On top of the calculators, Sextante offers an aggregated portfolio: users manually add positions held across different banks and brokers and track their entire net worth in a single view, with up-to-date market quotes, currency conversion and P&L. A built-in \"Aprende\" wiki rounds it out with clear financial guides on compound interest, mortgages, investing and FIRE.",
+      "p3": "Sextante is a real product, not a learning exercise: it is live in production, self-hosted, and designed end to end with GDPR in mind (data export, cascading account deletion and management of connected apps).",
+      "cta_visit": "Visit Sextante →"
+    },
+    "mcp": {
+      "heading": "The MCP Server — Bring Your Own AI",
+      "p1": "Sextante's standout feature is a remote MCP (Model Context Protocol) server secured with full OAuth 2.1: Dynamic Client Registration, PKCE, audience binding, hashed tokens, and per-client consent and revocation. It lets users connect their own AI assistant — Claude, ChatGPT or any MCP-capable client — to securely read and write their real portfolio.",
+      "p2": "The philosophy is simple: you bring the LLM, Sextante exposes your data safely. Instead of bolting yet another chatbot onto the product, it turns a personal-finance app into a secure data source that any assistant can reason over — the part of the project I'm proudest of technically."
+    },
+    "features": {
+      "heading": "What's Inside",
+      "p1": "Four pillars, all sharing the same calculation core, design system and i18n layer:",
+      "f1_label": "Calculators",
+      "f1_title": "Spanish FIRE & tax engine",
+      "f1_desc": "FIRE and personal-finance calculators with a real Spanish tax engine — IRPF, wealth and gift tax, and Social Security on 2026 brackets.",
+      "f2_label": "Portfolio",
+      "f2_title": "Aggregated net worth",
+      "f2_desc": "Manually added positions from any bank or broker, unified with live market quotes, currency conversion and P&L.",
+      "f3_label": "Integration",
+      "f3_title": "Remote MCP + OAuth 2.1",
+      "f3_desc": "Connect your own AI assistant to read and write your portfolio, gated by full OAuth 2.1 with per-client consent and revocation.",
+      "f4_label": "Learn",
+      "f4_title": "\"Aprende\" wiki",
+      "f4_desc": "Clear, practical financial guides on compound interest, mortgages, investing and the path to financial independence."
+    },
+    "stack": {
+      "heading": "Stack & Infrastructure",
+      "p1": "The frontend and BFF run on Next.js 16 (App Router, i18n with next-intl); the API is a separate NestJS 11 service backed by Drizzle ORM over PostgreSQL. Everything is containerized with Docker Compose, self-hosted, and deployed through GitHub Actions on a self-hosted runner behind nginx.",
+      "p2": "Authentication uses passwordless magic links with a JWT stored in an HttpOnly cookie. The whole product is built to a senior engineering bar: strict TypeScript with no shed code, full light/dark theming, accessibility, and a GDPR-first data model."
+    },
+    "back": "← Back to Projects"
   },
   "phd": {
     "eyebrow": "PhD Research Platform · University of Murcia · May 2023 – May 2026",
