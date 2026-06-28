@@ -31,6 +31,12 @@ export const metadata = {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
+  // Verificación de propiedad de Google AdSense (la cuenta se registró a nivel
+  // de fpardo.net; cubre el subdominio sextante.fpardo.net). No carga anuncios
+  // ni scripts en esta web: solo declara la propiedad del dominio.
+  other: {
+    'google-adsense-account': 'ca-pub-6037072320137271',
+  },
 }
 
 const jsonLd = {
