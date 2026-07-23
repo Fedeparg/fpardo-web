@@ -174,7 +174,7 @@
     },
     "demo": {
       "heading": "Demo de la Plataforma",
-      "p1": "La siguiente grabación muestra la interfaz web de MoviSound procesando una sesión de aula real y visualizando las métricas extraídas. Próximamente estará disponible un recorrido completo con narración."
+      "p1": "El recorrido de abajo repasa la plataforma en dos partes. Primero un paseo por la arquitectura, servicio a servicio, y después la propia interfaz web: subir una grabación de clase real, ver cómo el pipeline informa de su progreso en tiempo real y recorrer los resultados, desde las métricas de participación y la línea temporal de metodologías docentes hasta la transcripción diarizada y el resumen generado por el modelo de lenguaje."
     },
     "pubs": {
       "heading": "Publicaciones de Investigación",
