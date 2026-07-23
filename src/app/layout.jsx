@@ -46,7 +46,7 @@ const jsonLd = {
         'https://linkedin.com/in/federico-pardog',
         'https://github.com/fedeparg',
         'https://x.com/fpardo_98',
-        'https://www.youtube.com/@fpardo_98',
+        'https://www.youtube.com/@federicopardog',
       ],
     },
     {
