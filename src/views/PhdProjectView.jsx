@@ -64,7 +64,7 @@ export default function PhdProjectView() {
             <p>{t('phd.demo.p1')}</p>
             <div className="video-wrapper">
               <iframe
-                src="https://www.youtube.com/embed/BA8UBnBMrAQ"
+                src="https://www.youtube.com/embed/emgGZ3vdSgg"
                 title={t('phd.demo.heading')}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
