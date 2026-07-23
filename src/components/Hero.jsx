@@ -9,7 +9,7 @@ const socials = [
   { href: 'mailto:federico.pardog@gmail.com',   icon: MdEmail,    label: 'Email' },
   { href: 'https://linkedin.com/in/federico-pardog', icon: FaLinkedin, label: 'LinkedIn', external: true },
   { href: 'https://github.com/fedeparg',         icon: SiGithub,   label: 'GitHub',   external: true },
-  { href: 'https://x.com/fpardo_98',             icon: SiX,        label: 'X',        external: true },
+  { href: 'https://x.com/fedepardog',            icon: SiX,        label: 'X',        external: true },
   { href: 'https://www.youtube.com/@federicopardog', icon: SiYoutube,  label: 'YouTube',  external: true },
 ]
 
