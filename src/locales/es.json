@@ -162,14 +162,14 @@
     "about": {
       "heading": "Sobre el Proyecto",
       "p1": "La evaluación tradicional de la práctica docente se basa en la observación humana directa, un enfoque costoso, logísticamente complejo e inherentemente subjetivo. MoviSound aborda esta brecha procesando grabaciones sincrónicas de aula a través de un pipeline de IA multimodal y entregando retroalimentación estructurada y explicable a los docentes a través de una interfaz web.",
-      "p2": "La plataforma se desarrolló como una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) que combina análisis de audio extremo a extremo (ASR mediante Whisper, diarización de hablantes, extracción de características paralingüísticas) con modelos de lenguaje ajustados (BERT) interpretados mediante marcos de explicabilidad basados en SHAP. El objetivo no es solo la precisión de clasificación, sino la transparencia: los docentes necesitan entender por qué el sistema llega a sus conclusiones.",
+      "p2": "La plataforma funciona como un conjunto de servicios Docker desacoplados. Un frontend en Django gestiona usuarios, subidas e informes, mientras que un backend independiente en Python hace el trabajo pesado: transcripción con Whisper, diarización de hablantes, extracción de características paralingüísticas y modelos de lenguaje ajustados (BERT) interpretados mediante marcos de explicabilidad basados en SHAP. Ninguna de las dos partes toca la base de datos de la otra, lo que permite que el backend dé servicio a otros proyectos de la universidad que nunca usan este frontend. El objetivo no es solo la precisión de clasificación, sino la transparencia: los docentes necesitan entender por qué el sistema llega a sus conclusiones.",
       "p3": "Esta plataforma es el resultado aplicado de mi tesis doctoral, galardonada con Summa Cum Laude por la Universidad de Murcia en 2026.",
       "cta_thesis": "Descargar Tesis PDF",
       "cta_github": "Ver en GitHub"
     },
     "architecture": {
       "heading": "Arquitectura del Sistema",
-      "p1": "Cada nodo del diagrama representa un contenedor Docker independiente. El pipeline ingesta grabaciones de aula, las procesa a través de etapas de análisis de audio y transcripción, aplica fusión multimodal y expone los resultados a través de una API REST consumida por el frontend web.",
+      "p1": "Cada nodo del diagrama es un contenedor Docker independiente. Los usuarios llegan al frontend de Django a través de Caddy, que guarda cuentas, grabaciones e informes en SQLite. Cuando se sube una grabación, Celery se la pasa a un worker de frontend que la copia a MongoDB, la capa común entre las dos mitades del sistema, y lanza una ejecución del backend. El backend transcribe el audio, extrae las características acústicas y aplica los modelos desarrollados durante la tesis, publicando cada paso en Kafka para que el consumidor del frontend actualice la interfaz mientras el procesamiento sigue en marcha. Una instancia local de Ollama convierte la transcripción en un resumen de la sesión y una serie de pautas generales. Los resultados finales vuelven a MongoDB y el consumidor del frontend los escribe en SQLite para que el docente los consulte.",
       "caption": "Arquitectura de microservicios de MoviSound"
     },
     "demo": {
