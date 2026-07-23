@@ -20,7 +20,7 @@ export const projects = [
     cover: '/assets/projects/phd/movisound_logo.webp',
     // Portada-logo sobre marco cremita (object-fit: contain con fondo y padding).
     framedCover: true,
-    tags: ['Python', 'FastAPI', 'Docker', 'Celery', 'Whisper', 'BERT', 'SHAP', 'FAISS'],
+    tags: ['Python', 'Django', 'Docker', 'Celery', 'Kafka', 'MongoDB', 'Whisper', 'BERT', 'SHAP', 'FAISS'],
     path: '/projects/phd',
   },
 ]

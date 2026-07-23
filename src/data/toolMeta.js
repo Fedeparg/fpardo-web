@@ -1,5 +1,5 @@
 import {
-  SiPython, SiFastapi, SiDocker, SiCelery,
+  SiPython, SiFastapi, SiDocker, SiCelery, SiDjango, SiApachekafka, SiSqlite, SiCaddy,
   SiOpenai, SiHuggingface, SiMeta, SiPytorch,
   SiTensorflow, SiKubernetes, SiLinux, SiGooglecloud,
   SiRedis, SiPostgresql, SiGithubactions, SiNginx,
@@ -17,6 +17,10 @@ export const toolMeta = {
   'C++':            { icon: SiCplusplus,       url: 'https://isocpp.org' },
   JavaScript:       { icon: SiJavascript,      url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
   FastAPI:          { icon: SiFastapi,         url: 'https://fastapi.tiangolo.com' },
+  Django:           { icon: SiDjango,          url: 'https://djangoproject.com' },
+  Kafka:            { icon: SiApachekafka,     url: 'https://kafka.apache.org' },
+  SQLite:           { icon: SiSqlite,          url: 'https://sqlite.org' },
+  Caddy:            { icon: SiCaddy,           url: 'https://caddyserver.com' },
   Docker:           { icon: SiDocker,          url: 'https://docker.com' },
   Celery:           { icon: SiCelery,          url: 'https://docs.celeryq.dev' },
   Whisper:          { icon: SiOpenai,          url: 'https://openai.com/research/whisper' },
