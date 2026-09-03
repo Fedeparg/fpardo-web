@@ -13,8 +13,10 @@ export function generateStaticParams() {
   return getBlogPosts(DEFAULT_LOCALE).map(post => ({ slug: post.slug }))
 }
 
-export function generateMetadata({ params }) {
-  const post = getBlogPost(params.slug)
+// params is a promise from Next 15 onwards, so both entry points await it.
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  const post = getBlogPost(slug)
   if (!post) return { title: 'Blog' }
 
   const description = post.excerpt || undefined
@@ -60,8 +62,9 @@ function articleJsonLd(post) {
   }
 }
 
-export default function BlogPostPage({ params }) {
-  const post = getBlogPost(params.slug)
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params
+  const post = getBlogPost(slug)
   if (!post) notFound()
 
   const { source, ...meta } = post
