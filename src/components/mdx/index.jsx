@@ -15,4 +15,14 @@ function Anchor({ href = '', children, ...rest }) {
   )
 }
 
-export const mdxComponents = { a: Anchor, YouTube, Figure }
+// A wide table has to scroll inside its own box, otherwise it makes the whole
+// page scroll sideways on a phone.
+function Table({ children, ...rest }) {
+  return (
+    <div className="table-wrapper">
+      <table {...rest}>{children}</table>
+    </div>
+  )
+}
+
+export const mdxComponents = { a: Anchor, table: Table, YouTube, Figure }
