@@ -11,12 +11,12 @@
   },
   "hero": {
     "subtitle": "AI Engineer · PhD in Computer Science & AI",
-    "description": "I build machine learning systems end to end: fine-tuned language models, the data pipelines that feed them, and the infrastructure they run on. PhD in Computer Science and AI, University of Murcia.",
+    "description": "Python, models, and the plumbing that keeps them running. I did a PhD in Computer Science and AI at the University of Murcia, and these days I spend most of my time on language models.",
     "cta_contact": "Email me",
     "cta_cv": "Read the full CV",
     "photo_alt": "Federico Pardo",
     "eyebrow": "Federico Pardo · AI Engineer",
-    "title": "AI engineering, from the model to the system around it."
+    "title": "I build machine learning systems."
   },
   "about": {
     "title": "About",

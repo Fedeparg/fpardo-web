@@ -11,12 +11,12 @@
   },
   "hero": {
     "subtitle": "Ingeniero de IA · Doctor en Informática e IA",
-    "description": "Construyo sistemas de machine learning de principio a fin: modelos de lenguaje afinados, los pipelines de datos que los alimentan y la infraestructura sobre la que corren. Doctor en Informática e IA por la Universidad de Murcia.",
+    "description": "Python, modelos y la fontanería que los mantiene en marcha. Hice un doctorado en Informática e IA en la Universidad de Murcia y ahora dedico casi todo el tiempo a los modelos de lenguaje.",
     "cta_contact": "Escríbeme",
     "cta_cv": "Ver el CV completo",
     "photo_alt": "Federico Pardo",
     "eyebrow": "Federico Pardo · AI Engineer",
-    "title": "Ingeniería de IA, del modelo al sistema que lo rodea."
+    "title": "Construyo sistemas de machine learning."
   },
   "about": {
     "title": "Sobre mí",

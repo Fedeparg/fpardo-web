@@ -38,7 +38,7 @@ export default function OpengraphImage() {
           {'Federico Pardo'}
         </div>
         <div style={{ fontSize: 38, color: '#4a5158', marginTop: 20 }}>
-          {'AI engineering, from the model to the system around it'}
+          {'I build machine learning systems'}
         </div>
       </div>
     ),
