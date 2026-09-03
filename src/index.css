@@ -1384,7 +1384,8 @@ body {
 }
 
 /* A wide table scrolls inside its own box instead of forcing the page to
-   scroll sideways on a phone. */
+   scroll sideways on a phone. The min-width is what makes it overflow the
+   wrapper on a narrow screen; without it the table would just squash. */
 .post-content .table-wrapper {
     overflow-x: auto;
     margin-bottom: 1.2rem;
@@ -1392,6 +1393,7 @@ body {
 
 .post-content table {
     width: 100%;
+    min-width: 30rem;
     border-collapse: collapse;
     font-size: 0.92rem;
 }
