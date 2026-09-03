@@ -11,10 +11,12 @@
   },
   "hero": {
     "subtitle": "AI Engineer · PhD in Computer Science & AI",
-    "description": "I build production-ready multimodal AI systems combining audio processing, large language models, and explainable AI into scalable architectures. PhD in Computer Science completed Summa Cum Laude at the University of Murcia.",
-    "cta_contact": "Get in touch",
-    "cta_cv": "Download CV",
-    "photo_alt": "Federico Pardo"
+    "description": "I work where audio pipelines, language models and explainability meet real infrastructure. PhD in Computer Science and AI, University of Murcia.",
+    "cta_contact": "Email me",
+    "cta_cv": "Read the full CV",
+    "photo_alt": "Federico Pardo",
+    "eyebrow": "Federico Pardo · AI Engineer",
+    "title": "Multimodal AI systems, and why they do what they do."
   },
   "about": {
     "title": "About",
@@ -206,5 +208,12 @@
     "copyright": "© {{year}} Federico Pardo.",
     "hosted": "Hosted on self-managed infrastructure",
     "source": "View Source"
+  },
+  "home": {
+    "work_label": "Selected work",
+    "work_all": "All projects →",
+    "writing_label": "Writing",
+    "writing_intro": "Notes on the systems above, written while building them.",
+    "writing_all": "All posts →"
   }
 }
