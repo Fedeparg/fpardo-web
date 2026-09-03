@@ -1,6 +1,7 @@
 import { getBlogPosts } from '../lib/notion.js'
+import { SEO } from '../lib/seo.js'
 
-const SITE_URL = 'https://fpardo.net'
+const SITE_URL = SEO.SITE_URL
 
 // Generated at request time so blog posts come from live Notion data.
 export const dynamic = 'force-dynamic'

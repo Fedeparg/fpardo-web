@@ -1,3 +1,4 @@
+const SITE_URL = 'https://fpardo.net'
 const SITE_NAME = 'Federico Pardo'
 const DEFAULT_TITLE = 'Federico Pardo · AI Engineer'
 const OG_IMAGE = '/opengraph-image'
@@ -28,4 +29,4 @@ export function pageMetadata({ title, description, path, type = 'website' }) {
   }
 }
 
-export const SEO = { SITE_NAME, DEFAULT_TITLE, OG_IMAGE }
+export const SEO = { SITE_URL, SITE_NAME, DEFAULT_TITLE, OG_IMAGE }

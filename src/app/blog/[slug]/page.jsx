@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import BlogPostView from '../../../views/BlogPostView.jsx'
 import NotionRenderer from '../../../components/NotionRenderer.jsx'
 import { getBlogPost } from '../../../lib/notion.js'
+import { SEO } from '../../../lib/seo.js'
 
 export const dynamic = 'force-dynamic'
 
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }) {
   }
 }
 
-const SITE_URL = 'https://fpardo.net'
+const SITE_URL = SEO.SITE_URL
 
 function articleJsonLd(post) {
   return {

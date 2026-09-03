@@ -2,8 +2,9 @@ import '../index.css'
 import Providers from './providers.jsx'
 import Nav from '../components/Nav.jsx'
 import Footer from '../components/Footer.jsx'
+import { SEO } from '../lib/seo.js'
 
-const SITE_URL = 'https://fpardo.net'
+const SITE_URL = SEO.SITE_URL
 const DESCRIPTION =
   'Federico Pardo - AI Engineer with a PhD specializing in Generative AI, Multimodal Systems, and Scalable Infrastructure'
 
