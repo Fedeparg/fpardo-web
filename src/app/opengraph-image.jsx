@@ -15,17 +15,30 @@ export default function OpengraphImage() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          backgroundColor: '#0a0a0a',
-          color: '#ffffff',
+          // Hardcoded rather than tokenised: satori resolves no CSS variables,
+          // so these have to track :root in index.css by hand.
+          backgroundColor: '#f6f7f8',
+          color: '#15181c',
           padding: '80px',
           fontFamily: 'sans-serif',
         }}
       >
-        <div style={{ fontSize: 84, fontWeight: 700, letterSpacing: '-0.02em' }}>
+        <div
+          style={{
+            fontSize: 26,
+            letterSpacing: '0.14em',
+            textTransform: 'uppercase',
+            color: '#0b6e63',
+            marginBottom: 28,
+          }}
+        >
+          {'AI Engineer'}
+        </div>
+        <div style={{ fontSize: 84, fontWeight: 700, letterSpacing: '-0.025em' }}>
           {'Federico Pardo'}
         </div>
-        <div style={{ fontSize: 40, color: '#a3a3a3', marginTop: 24 }}>
-          {'AI Engineer · PhD in Computer Science & AI'}
+        <div style={{ fontSize: 38, color: '#4a5158', marginTop: 20 }}>
+          {'Multimodal AI systems, and why they do what they do'}
         </div>
       </div>
     ),
