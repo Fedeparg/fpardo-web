@@ -1383,8 +1383,8 @@ body {
     color: var(--text-secondary);
 }
 
-/* MDX can produce tables, which the Notion renderer never emitted. The wrapper
-   scrolls instead of forcing the page to scroll sideways on a phone. */
+/* A wide table scrolls inside its own box instead of forcing the page to
+   scroll sideways on a phone. */
 .post-content .table-wrapper {
     overflow-x: auto;
     margin-bottom: 1.2rem;
