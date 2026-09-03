@@ -2,6 +2,11 @@ import { Archivo, Public_Sans, IBM_Plex_Mono } from 'next/font/google'
 import '../index.css'
 import Providers from './providers.jsx'
 
+import Nav from '../components/Nav.jsx'
+import Footer from '../components/Footer.jsx'
+import { SEO } from '../lib/seo.js'
+import { socials } from '../data/socials.js'
+
 // next/font descarga las fuentes en build y las sirve desde nuestro propio
 // dominio, así que no hay petición a Google en runtime ni salto de layout.
 // Archivo y Public Sans son variables: sin `weight` se carga todo el rango.
@@ -25,9 +30,6 @@ const plexMono = IBM_Plex_Mono({
 })
 
 const fontVariables = `${archivo.variable} ${publicSans.variable} ${plexMono.variable}`
-import Nav from '../components/Nav.jsx'
-import Footer from '../components/Footer.jsx'
-import { SEO } from '../lib/seo.js'
 
 const SITE_URL = SEO.SITE_URL
 const DESCRIPTION =
@@ -68,12 +70,7 @@ const jsonLd = {
       url: SITE_URL,
       jobTitle: 'AI Engineer',
       description: DESCRIPTION,
-      sameAs: [
-        'https://linkedin.com/in/federico-pardog',
-        'https://github.com/fedeparg',
-        'https://x.com/fedepardog',
-        'https://www.youtube.com/@federicopardog',
-      ],
+      sameAs: socials.map(social => social.href),
     },
     {
       '@type': 'WebSite',

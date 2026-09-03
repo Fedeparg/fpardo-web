@@ -29,8 +29,8 @@ export const socials = [
   {
     id: 'youtube',
     label: 'YouTube',
-    handle: '@federicopardog',
-    href: 'https://www.youtube.com/@federicopardog',
+    handle: '@fedepardog',
+    href: 'https://www.youtube.com/@fedepardog',
     icon: SiYoutube,
   },
   {
