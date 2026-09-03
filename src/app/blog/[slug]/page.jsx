@@ -1,16 +1,24 @@
 import { notFound } from 'next/navigation'
 import BlogPostView from '../../../views/BlogPostView.jsx'
-import NotionRenderer from '../../../components/NotionRenderer.jsx'
-import { getBlogPost } from '../../../lib/notion.js'
+import PostBody from '../../../components/PostBody.jsx'
+import { getBlogPost, getBlogPosts, DEFAULT_LOCALE } from '../../../lib/posts.js'
 import { SEO } from '../../../lib/seo.js'
 
-export const dynamic = 'force-dynamic'
+// Everything is prerendered at build time, and the content directory does not
+// travel into the standalone runtime. Without this, an unknown slug would try to
+// read from disk in production and fail with a 500 instead of a 404.
+export const dynamicParams = false
 
-export async function generateMetadata({ params }) {
-  const post = await getBlogPost(params.slug)
+export function generateStaticParams() {
+  return getBlogPosts(DEFAULT_LOCALE).map(post => ({ slug: post.slug }))
+}
+
+export function generateMetadata({ params }) {
+  const post = getBlogPost(params.slug)
   if (!post) return { title: 'Blog' }
 
   const description = post.excerpt || undefined
+  // Relative paths are resolved against metadataBase from the root layout.
   const images = post.cover ? [post.cover] : ['/opengraph-image']
 
   return {
@@ -44,17 +52,19 @@ function articleJsonLd(post) {
     headline: post.title,
     description: post.excerpt || undefined,
     datePublished: post.date || undefined,
-    image: post.cover || undefined,
+    // Hand-serialised, so metadataBase does not apply and the cover has to be
+    // made absolute here.
+    image: post.cover ? new URL(post.cover, SITE_URL).toString() : undefined,
     url: `${SITE_URL}/blog/${post.slug}`,
     author: { '@type': 'Person', name: 'Federico Pardo', url: SITE_URL },
   }
 }
 
-export default async function BlogPostPage({ params }) {
-  const post = await getBlogPost(params.slug)
+export default function BlogPostPage({ params }) {
+  const post = getBlogPost(params.slug)
   if (!post) notFound()
 
-  const { blocks, ...meta } = post
+  const { source, ...meta } = post
   return (
     <>
       <script
@@ -62,7 +72,7 @@ export default async function BlogPostPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd(post)) }}
       />
       <BlogPostView post={meta}>
-        <NotionRenderer blocks={blocks} />
+        <PostBody source={source} lang={meta.locale} />
       </BlogPostView>
     </>
   )
