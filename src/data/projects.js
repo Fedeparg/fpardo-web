@@ -5,6 +5,7 @@ export const projects = [
     categoryKey: 'projects.sextante.category',
     periodKey: 'projects.sextante.period',
     descriptionKey: 'projects.sextante.description',
+    excerptKey: 'projects.sextante.excerpt',
     cover: '/assets/projects/sextante/sextante_logo.webp',
     // La portada es una captura del hero (a sangre); sin el marco cremita de las portadas-logo.
     framedCover: false,
@@ -17,6 +18,7 @@ export const projects = [
     categoryKey: 'projects.phd.category',
     periodKey: 'projects.phd.period',
     descriptionKey: 'projects.phd.description',
+    excerptKey: 'projects.phd.excerpt',
     cover: '/assets/projects/phd/movisound_logo.webp',
     // Portada-logo sobre marco cremita (object-fit: contain con fondo y padding).
     framedCover: true,

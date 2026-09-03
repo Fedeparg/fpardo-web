@@ -99,13 +99,15 @@
       "title": "Sextante",
       "category": "Producto de Finanzas Personales",
       "period": "2026 · En producción",
-      "description": "Un producto serio de finanzas personales construido para el sistema bancario y fiscal español: una suite de calculadoras de FIRE y finanzas personales (IRPF, patrimonio, donaciones y Seguridad Social con los tramos reales de 2026), una cartera agregada con cotizaciones de mercado al día y P&L, y un servidor MCP remoto con OAuth 2.1 para que cada usuario conecte su propio asistente de IA y lea y escriba sus datos. Bilingüe ES/EN."
+      "description": "Un producto serio de finanzas personales construido para el sistema bancario y fiscal español: una suite de calculadoras de FIRE y finanzas personales (IRPF, patrimonio, donaciones y Seguridad Social con los tramos reales de 2026), una cartera agregada con cotizaciones de mercado al día y P&L, y un servidor MCP remoto con OAuth 2.1 para que cada usuario conecte su propio asistente de IA y lea y escriba sus datos. Bilingüe ES/EN.",
+      "excerpt": "Calculadoras de FIRE y finanzas personales sobre los tramos fiscales reales españoles, cartera agregada con cotizaciones en vivo y un servidor MCP remoto con OAuth 2.1 para que cada usuario conecte su propio asistente de IA a sus datos."
     },
     "phd": {
       "title": "MoviSound (PhD)",
       "category": "Plataforma de Investigación",
       "period": "Mayo 2023 – Mayo 2026",
-      "description": "Una plataforma de IA multimodal que procesa grabaciones de aula para dar a los docentes retroalimentación objetiva y automatizada sobre su práctica. Combina pipelines de audio extremo a extremo (ASR, diarización de hablantes, extracción de características paralingüísticas) con modelos de texto basados en BERT interpretados mediante marcos de explicabilidad SHAP para generar retroalimentación transparente y automatizada."
+      "description": "Una plataforma de IA multimodal que procesa grabaciones de aula para dar a los docentes retroalimentación objetiva y automatizada sobre su práctica. Combina pipelines de audio extremo a extremo (ASR, diarización de hablantes, extracción de características paralingüísticas) con modelos de texto basados en BERT interpretados mediante marcos de explicabilidad SHAP para generar retroalimentación transparente y automatizada.",
+      "excerpt": "Plataforma multimodal que procesa grabaciones de aula y devuelve feedback objetivo al profesorado, combinando pipelines de audio con modelos BERT leídos mediante SHAP para que cada conclusión sea trazable."
     }
   },
   "sextante": {

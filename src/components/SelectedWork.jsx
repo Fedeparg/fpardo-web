@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects.js'
 import ToolTag from './ToolTag.jsx'
 
-// The landing shows every project as a card. /projects keeps the long form
-// with full descriptions; this is the glance version.
+// The landing shows every project as a card, using the short excerpt.
+// /projects keeps the long descriptionKey; this is the glance version.
 function SelectedWork() {
   const { t } = useTranslation()
 
@@ -35,7 +35,7 @@ function SelectedWork() {
                 <h3 className="work-card__title">
                   <Link href={project.path}>{t(project.titleKey)}</Link>
                 </h3>
-                <p className="work-card__excerpt">{t(project.descriptionKey)}</p>
+                <p className="work-card__excerpt">{t(project.excerptKey)}</p>
                 <div className="project-tags">
                   {project.tags.map(tag => (
                     <ToolTag key={tag} name={tag} />

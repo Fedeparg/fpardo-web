@@ -99,13 +99,15 @@
       "title": "Sextante",
       "category": "Personal Finance Product",
       "period": "2026 · In production",
-      "description": "A serious personal-finance product built for the Spanish banking and tax system: a suite of FIRE and personal-finance calculators (IRPF, wealth tax, gift tax and Social Security with real 2026 brackets), an aggregated portfolio with live market quotes and P&L, and a remote MCP server with OAuth 2.1 so users can connect their own AI assistant to read and write their data. Bilingual ES/EN."
+      "description": "A serious personal-finance product built for the Spanish banking and tax system: a suite of FIRE and personal-finance calculators (IRPF, wealth tax, gift tax and Social Security with real 2026 brackets), an aggregated portfolio with live market quotes and P&L, and a remote MCP server with OAuth 2.1 so users can connect their own AI assistant to read and write their data. Bilingual ES/EN.",
+      "excerpt": "FIRE and personal finance calculators built on the real Spanish tax brackets, an aggregated portfolio with live quotes, and a remote MCP server with OAuth 2.1 so users can plug their own AI assistant into their data."
     },
     "phd": {
       "title": "MoviSound (PhD)",
       "category": "Research Platform",
       "period": "May 2023 – May 2026",
-      "description": "A multimodal AI platform that processes classroom recordings to give teachers objective, automated feedback on their practice. Combines end-to-end audio pipelines (ASR, speaker diarization, paralinguistic feature extraction) with BERT-based text models interpreted through SHAP explainability frameworks to generate transparent, automated feedback for teachers."
+      "description": "A multimodal AI platform that processes classroom recordings to give teachers objective, automated feedback on their practice. Combines end-to-end audio pipelines (ASR, speaker diarization, paralinguistic feature extraction) with BERT-based text models interpreted through SHAP explainability frameworks to generate transparent, automated feedback for teachers.",
+      "excerpt": "A multimodal platform that processes classroom recordings and returns objective feedback to teachers, pairing audio pipelines with BERT models read through SHAP so every piece of feedback can be traced back."
     }
   },
   "sextante": {
