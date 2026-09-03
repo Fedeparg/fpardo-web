@@ -1,0 +1,62 @@
+---
+title: 'Moving this blog out of Notion'
+date: '2026-09-03'
+excerpt: 'The blog used to read from a Notion database on every request. Now the posts are MDX files sitting next to the code, and the whole thing renders at build time.'
+tags:
+  - engineering
+  - nextjs
+draft: false
+---
+
+When I first added a blog to this site, Notion was the obvious choice. I already write
+notes there, the API is easy enough, and it meant I could publish without touching the
+repo. It worked, but it came with a cost I kept paying on every single page view.
+
+## Why it had to go
+
+Notion serves images as signed S3 URLs that expire. That single detail decides the whole
+architecture: you cannot cache a response that contains a link which will be dead in an
+hour. So every blog route was marked `force-dynamic`, and every visit went out to the
+Notion API before anything could be rendered.
+
+It got worse in the details. Notion's query endpoint has no "find by slug", so fetching a
+single post meant pulling the entire database and filtering in memory. Two round trips to
+publish one page. And if Notion was slow, or the integration token got rotated, the blog
+was simply down.
+
+## What replaced it
+
+Posts are now MDX files under `src/content/blog/en/`. The filename is the URL, the
+frontmatter holds the title, date, excerpt and tags, and `draft: true` keeps something out
+of the production build while I am still writing it.
+
+```js
+export function getBlogPosts(locale = DEFAULT_LOCALE) {
+  return listPostFiles(locale)
+    .map(({ slug }) => readPost(locale, slug))
+    .filter(entry => entry && (INCLUDE_DRAFTS || !entry.meta.draft))
+    .map(entry => entry.meta)
+    .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''))
+}
+```
+
+That is the entire data layer now, give or take the frontmatter normalisation. It reads
+from disk during `next build` and the server never touches it again.
+
+## What actually changed
+
+| | Notion | MDX files |
+| --- | --- | --- |
+| Rendering | Dynamic, every request | Static, at build time |
+| Requests per post | Two, to an external API | Zero |
+| Images | Signed URLs that expire | Files in `public/` |
+| Fails when | Notion is down or the token rotates | The build breaks, before deploy |
+| Publishing | Tick a checkbox | Push a commit |
+
+The last row is the real trade-off. Publishing now means a commit and a deploy instead of
+a checkbox, and I lose the ability to write a post from my phone. For a personal blog
+that I update every few weeks, that is a price worth paying to get a page that renders in
+milliseconds and cannot break because a third party had a bad day.
+
+The nice side effect is that posts go through pull requests like everything else, so a
+typo has a diff and a rollback is one revert away.
