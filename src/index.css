@@ -1136,10 +1136,6 @@ body {
     padding: var(--spacing-md) 0;
 }
 
-.blog-status--error {
-    color: #f87171;
-}
-
 .blog-list {
     list-style: none;
     display: flex;
@@ -1263,56 +1259,56 @@ body {
     color: var(--text-muted);
 }
 
-.blog-post__tags {
-    list-style: none;
-    display: flex;
-    gap: 0.4rem;
-    flex-wrap: wrap;
-}
+/* MDX post content */
 
-/* Notion content renderer */
-
-.notion-content {
+.post-content {
     line-height: 1.8;
     color: var(--text-secondary);
 }
 
-.notion-content p {
+.post-content p {
     margin-bottom: 1.2rem;
 }
 
-.notion-content h1 {
+.post-content h1 {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 2rem 0 1rem;
 }
 
-.notion-content h2 {
+.post-content h2 {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--text-primary);
     margin: 1.8rem 0 0.8rem;
 }
 
-.notion-content h3 {
+.post-content h3 {
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--text-primary);
     margin: 1.5rem 0 0.6rem;
 }
 
-.notion-content ul,
-.notion-content ol {
+.post-content h4 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 1.3rem 0 0.5rem;
+}
+
+.post-content ul,
+.post-content ol {
     padding-left: 1.5rem;
     margin-bottom: 1.2rem;
 }
 
-.notion-content li {
+.post-content li {
     margin-bottom: 0.4rem;
 }
 
-.notion-content blockquote {
+.post-content blockquote {
     border-left: 3px solid var(--accent);
     padding-left: 1rem;
     margin: 1.5rem 0;
@@ -1320,7 +1316,7 @@ body {
     font-style: italic;
 }
 
-.notion-content pre {
+.post-content pre {
     background: var(--bg-tertiary);
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -1332,7 +1328,7 @@ body {
     line-height: 1.6;
 }
 
-.notion-content code {
+.post-content code {
     font-family: var(--font-mono);
     font-size: 0.88em;
     background: var(--bg-tertiary);
@@ -1340,41 +1336,91 @@ body {
     border-radius: 3px;
 }
 
-.notion-content pre code {
+.post-content pre code {
     background: none;
     padding: 0;
 }
 
-.notion-content hr {
+.post-content hr {
     border: none;
     border-top: 1px solid var(--border);
     margin: 2rem 0;
 }
 
-.notion-content figure {
+.post-content figure {
     margin: 1.5rem 0;
 }
 
-.notion-content img {
+.post-content img {
     max-width: 100%;
     border-radius: 6px;
     display: block;
 }
 
-.notion-content figcaption {
+.post-content figcaption {
     font-size: 0.85rem;
     color: var(--text-muted);
     text-align: center;
     margin-top: 0.5rem;
 }
 
-.notion-content a {
+.post-content a {
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-.notion-content strong {
+.post-content strong {
     color: var(--text-primary);
     font-weight: 600;
+}
+
+.post-content em {
+    font-style: italic;
+}
+
+.post-content del {
+    color: var(--text-secondary);
+}
+
+/* A wide table scrolls inside its own box instead of forcing the page to
+   scroll sideways on a phone. The min-width is what makes it overflow the
+   wrapper on a narrow screen; without it the table would just squash. */
+.post-content .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 1.2rem;
+}
+
+.post-content table {
+    width: 100%;
+    min-width: 30rem;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.post-content th,
+.post-content td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content th {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Task lists come from remark-gfm and should not carry bullets. */
+.post-content ul.contains-task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-content input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* The post header already ends in a border, so the body must not add a gap. */
+.post-content > :first-child {
+    margin-top: 0;
 }

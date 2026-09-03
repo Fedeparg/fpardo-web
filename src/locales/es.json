@@ -191,8 +191,6 @@
   },
   "blog": {
     "title": "Blog",
-    "loading": "Cargando...",
-    "error": "Error al cargar las entradas.",
     "empty": "Aún no hay entradas.",
     "read_more": "Leer más",
     "back": "Volver al blog",

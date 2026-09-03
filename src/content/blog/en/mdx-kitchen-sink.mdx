@@ -1,0 +1,65 @@
+---
+title: 'MDX kitchen sink'
+date: '2026-09-03'
+excerpt: 'A draft that exercises every element and component available in a post. Never published, kept as a live reference while writing.'
+tags:
+  - reference
+cover: /assets/projects/phd/movisound_arch_hd.webp
+draft: true
+---
+
+This post never reaches production because it is marked `draft: true`. It exists so that
+every supported element has somewhere to be checked after a dependency bump.
+
+## Headings
+
+### Third level
+
+#### Fourth level
+
+## Text
+
+Regular prose with **bold**, *italic*, `inline code`, ~~strikethrough~~, an
+[internal link](/projects) and an [external one](https://nextjs.org).
+
+> A blockquote, for when someone else said it better.
+
+## Lists
+
+- First item
+- Second item
+  - Nested item
+
+1. Ordered one
+2. Ordered two
+
+- [x] A checked task
+- [ ] An unchecked one
+
+## Code
+
+```python
+def slugify(title: str) -> str:
+    return "-".join(title.lower().split())
+```
+
+## Table
+
+| Component | Purpose |
+| --- | --- |
+| `Figure` | Image with an optional caption |
+| `YouTube` | Responsive video embed |
+
+## Components
+
+<Figure
+  src="/assets/projects/phd/movisound_arch_hd.webp"
+  alt="MoviSound system architecture"
+  caption="Figure renders an image with an optional caption."
+/>
+
+<YouTube id="emgGZ3vdSgg" title="MoviSound demo" />
+
+---
+
+Everything above this line should render with the styles defined for `.post-content`.

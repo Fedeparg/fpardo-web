@@ -1,4 +1,6 @@
-const SITE_URL = 'https://fpardo.net'
+import { SEO } from '../lib/seo.js'
+
+const SITE_URL = SEO.SITE_URL
 
 export default function robots() {
   return {
