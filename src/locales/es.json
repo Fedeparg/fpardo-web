@@ -11,17 +11,17 @@
   },
   "hero": {
     "subtitle": "Ingeniero de IA · Doctor en Informática e IA",
-    "description": "Trabajo donde los pipelines de audio, los modelos de lenguaje y la explicabilidad se encuentran con la infraestructura real. Doctor en Informática e IA por la Universidad de Murcia.",
+    "description": "Construyo sistemas de machine learning de principio a fin: modelos de lenguaje afinados, los pipelines de datos que los alimentan y la infraestructura sobre la que corren. Doctor en Informática e IA por la Universidad de Murcia.",
     "cta_contact": "Escríbeme",
     "cta_cv": "Ver el CV completo",
     "photo_alt": "Federico Pardo",
     "eyebrow": "Federico Pardo · AI Engineer",
-    "title": "Sistemas de IA multimodal, y por qué hacen lo que hacen."
+    "title": "Ingeniería de IA, del modelo al sistema que lo rodea."
   },
   "about": {
     "title": "Sobre mí",
     "p1": "Soy Doctor en Informática e Inteligencia Artificial por la Universidad de Murcia, con la calificación de <strong>Summa Cum Laude</strong>. Durante los últimos 4 años, mi trabajo se ha centrado en conectar los sistemas de IA más avanzados con la ingeniería de software robusta y lista para producción.",
-    "p2": "Mi especialidad se centra en el desarrollo de arquitecturas multimodales (combinando procesamiento de audio con Grandes Modelos de Lenguaje), la orquestación de pipelines de datos escalables y la implementación de marcos de IA Explicable (XAI). Priorizo construir microservicios fiables y de alta disponibilidad sobre simplemente perseguir benchmarks teóricos."
+    "p2": "Mi trabajo abarca el fine-tuning de modelos transformer, la orquestación de pipelines de datos escalables y la implementación de frameworks de IA explicable (XAI) para que un sistema pueda justificar su salida en lugar de limitarse a dar una puntuación. Priorizo construir servicios fiables y de alta disponibilidad antes que perseguir benchmarks teóricos."
   },
   "experience": {
     "title": "Experiencia",

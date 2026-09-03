@@ -5,7 +5,7 @@ import Education from '../../components/Education.jsx'
 import { pageMetadata } from '../../lib/seo.js'
 
 const DESCRIPTION =
-  'Federico Pardo, AI Engineer and PhD in Computer Science, including his background in generative AI and multimodal systems, professional experience, and technical skills.'
+  'Federico Pardo, AI Engineer and PhD in Computer Science and AI, including his professional experience, technical skills, and education.'
 
 export const metadata = pageMetadata({ title: 'About', description: DESCRIPTION, path: '/about' })
 

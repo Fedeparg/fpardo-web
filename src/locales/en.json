@@ -11,17 +11,17 @@
   },
   "hero": {
     "subtitle": "AI Engineer · PhD in Computer Science & AI",
-    "description": "I work where audio pipelines, language models and explainability meet real infrastructure. PhD in Computer Science and AI, University of Murcia.",
+    "description": "I build machine learning systems end to end: fine-tuned language models, the data pipelines that feed them, and the infrastructure they run on. PhD in Computer Science and AI, University of Murcia.",
     "cta_contact": "Email me",
     "cta_cv": "Read the full CV",
     "photo_alt": "Federico Pardo",
     "eyebrow": "Federico Pardo · AI Engineer",
-    "title": "Multimodal AI systems, and why they do what they do."
+    "title": "AI engineering, from the model to the system around it."
   },
   "about": {
     "title": "About",
     "p1": "I hold a PhD in Computer Science and Artificial Intelligence from the University of Murcia, awarded with <strong>Summa Cum Laude</strong> honors. Over the past 4+ years, my work has centered on bridging the gap between cutting-edge AI systems and robust, production-ready software engineering.",
-    "p2": "My expertise focuses on developing multimodal architectures (combining audio processing with Large Language Models), orchestrating scalable data pipelines, and implementing Explainable AI (XAI) frameworks. I prioritize building reliable, high-availability microservices over simply chasing theoretical benchmarks."
+    "p2": "My work spans fine-tuning transformer models, orchestrating scalable data pipelines, and implementing Explainable AI (XAI) frameworks so a system can justify its output rather than only report a score. I prioritize building reliable, high-availability services over chasing theoretical benchmarks."
   },
   "experience": {
     "title": "Experience",

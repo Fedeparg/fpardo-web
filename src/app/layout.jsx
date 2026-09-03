@@ -33,7 +33,7 @@ const fontVariables = `${archivo.variable} ${publicSans.variable} ${plexMono.var
 
 const SITE_URL = SEO.SITE_URL
 const DESCRIPTION =
-  'Federico Pardo - AI Engineer with a PhD specializing in Generative AI, Multimodal Systems, and Scalable Infrastructure'
+  'Federico Pardo - AI Engineer with a PhD in Computer Science and AI, working on language models, data pipelines, and the infrastructure that runs them'
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
