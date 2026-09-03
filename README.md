@@ -94,8 +94,7 @@ fpardo-web/
 │   ├── lib/seo.js          # Shared metadata helper
 │   ├── __tests__/          # Vitest suites (i18n parity, post frontmatter)
 │   └── locales/            # en.json / es.json
-├── public/assets/          # Images, CV, project files
-└── phd.html                # Static page served at phd.fpardo.net
+└── public/assets/          # Images and project files
 ```
 
 ## License
