@@ -28,7 +28,7 @@
     "umu": {
       "role": "AI Engineer",
       "meta": "University of Murcia · May 2023 – May 2026",
-      "description": "Designed and deployed a decoupled microservices architecture (Python, FastAPI, Docker, Celery) for multimodal AI inference, optimizing processing latency across local and cloud infrastructure. Built end-to-end audio processing pipelines integrating ASR (Whisper), speaker diarization, paralinguistic feature extraction, and semantic vector embeddings (FAISS). Applied Explainable AI (XAI) frameworks utilizing SHAP values to interpret fine-tuned BERT models, delivering complete system transparency. Published 5 high-impact, first-author research papers in venues like IEEE Access and Applied Sciences."
+      "description": "Designed and deployed a decoupled microservices architecture (Python, FastAPI, Docker, Celery) for multimodal AI inference, optimizing processing latency across local and cloud infrastructure. Built end-to-end audio processing pipelines integrating ASR (Whisper), speaker diarization, paralinguistic feature extraction, and semantic vector embeddings (FAISS). Applied Explainable AI (XAI) frameworks utilizing SHAP values to interpret fine-tuned BERT models, delivering complete system transparency. Published 5 peer-reviewed research papers, 3 of them as first author, in venues like IEEE Access and Applied Sciences."
     },
     "webhelp": {
       "role": "Cloud Technical Support Specialist (GCP)",
@@ -205,5 +205,23 @@
     "writing_label": "Writing",
     "writing_intro": "Notes on the systems above, written while building them.",
     "writing_all": "All posts →"
+  },
+  "education": {
+    "title": "Education",
+    "phd": {
+      "degree": "PhD in Computer Science and Artificial Intelligence",
+      "school": "University of Murcia",
+      "period": "2023 – 2026"
+    },
+    "msc": {
+      "degree": "M.Sc. in Big Data and Artificial Intelligence",
+      "school": "University of Murcia",
+      "period": "2020 – 2021"
+    },
+    "bsc": {
+      "degree": "B.Sc. in Computer Science, specialising in AI",
+      "school": "University of Murcia",
+      "period": "2016 – 2020"
+    }
   }
 }

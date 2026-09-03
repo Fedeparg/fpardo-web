@@ -1,6 +1,7 @@
 import About from '../../components/About.jsx'
 import Experience from '../../components/Experience.jsx'
 import Skills from '../../components/Skills.jsx'
+import Education from '../../components/Education.jsx'
 import { pageMetadata } from '../../lib/seo.js'
 
 const DESCRIPTION =
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <About />
       <Experience />
       <Skills />
+      <Education />
     </div>
   )
 }

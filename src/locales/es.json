@@ -28,7 +28,7 @@
     "umu": {
       "role": "Ingeniero de IA",
       "meta": "Universidad de Murcia · Mayo 2023 – Mayo 2026",
-      "description": "Diseñé y desplegué una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) para inferencia de IA multimodal, optimizando la latencia de procesamiento en infraestructura local y en la nube. Construí pipelines de procesamiento de audio extremo a extremo integrando ASR (Whisper), diarización de hablantes, extracción de características paralingüísticas y embeddings vectoriales semánticos (FAISS). Apliqué marcos de IA Explicable (XAI) utilizando valores SHAP para interpretar modelos BERT ajustados, logrando transparencia total del sistema. Publiqué 5 artículos de investigación de alto impacto como primer autor en venues como IEEE Access y Applied Sciences."
+      "description": "Diseñé y desplegué una arquitectura de microservicios desacoplados (Python, FastAPI, Docker, Celery) para inferencia de IA multimodal, optimizando la latencia de procesamiento en infraestructura local y en la nube. Construí pipelines de procesamiento de audio extremo a extremo integrando ASR (Whisper), diarización de hablantes, extracción de características paralingüísticas y embeddings vectoriales semánticos (FAISS). Apliqué marcos de IA Explicable (XAI) utilizando valores SHAP para interpretar modelos BERT ajustados, logrando transparencia total del sistema. Publiqué 5 artículos de investigación revisados por pares, 3 de ellos como primer autor, en venues como IEEE Access y Applied Sciences."
     },
     "webhelp": {
       "role": "Especialista en Soporte Técnico Cloud (GCP)",
@@ -205,5 +205,23 @@
     "writing_label": "Escritos",
     "writing_intro": "Notas sobre los sistemas de arriba, escritas mientras los construía.",
     "writing_all": "Todas las entradas →"
+  },
+  "education": {
+    "title": "Formación",
+    "phd": {
+      "degree": "Doctorado en Informática e Inteligencia Artificial",
+      "school": "Universidad de Murcia",
+      "period": "2023 – 2026"
+    },
+    "msc": {
+      "degree": "Máster en Big Data e Inteligencia Artificial",
+      "school": "Universidad de Murcia",
+      "period": "2020 – 2021"
+    },
+    "bsc": {
+      "degree": "Grado en Ingeniería Informática, especialidad en IA",
+      "school": "Universidad de Murcia",
+      "period": "2016 – 2020"
+    }
   }
 }
