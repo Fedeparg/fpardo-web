@@ -809,6 +809,13 @@ body {
    Contact Section
    ================================ */
 
+/* La seccion de escritos desaparece cuando no hay posts publicados, asi que
+   trabajo y contacto pueden quedar adyacentes y ambas son section-alt. El
+   borde superior las separa pase lo que pase. */
+.contact {
+    border-top: 1px solid var(--border);
+}
+
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
