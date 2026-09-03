@@ -88,19 +88,9 @@
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "intro": "If you're working on something interesting in AI, want to collaborate, or just have questions about any of the work here, feel free to reach out.",
-    "linkedin": "LinkedIn Profile",
-    "github": "GitHub Profile",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit_idle": "Send Message",
-      "submit_sending": "Sending...",
-      "submit_success": "Message Sent!",
-      "submit_error": "Error, try again"
-    }
+    "title": "Working on something interesting?",
+    "intro": "If you are building in AI, want to collaborate, or have questions about any of the work here, write to me.",
+    "elsewhere": "Elsewhere"
   },
   "projects": {
     "title": "Projects",

@@ -88,19 +88,9 @@
     }
   },
   "contact": {
-    "title": "Contacto",
-    "intro": "Si estás trabajando en algo interesante de IA, quieres colaborar, o simplemente tienes preguntas sobre alguno de los proyectos, no dudes en escribirme.",
-    "linkedin": "Perfil de LinkedIn",
-    "github": "Perfil de GitHub",
-    "form": {
-      "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "submit_idle": "Enviar Mensaje",
-      "submit_sending": "Enviando...",
-      "submit_success": "¡Mensaje Enviado!",
-      "submit_error": "Error, inténtalo de nuevo"
-    }
+    "title": "¿Estás construyendo algo interesante?",
+    "intro": "Si trabajas en IA, quieres colaborar o tienes preguntas sobre cualquiera de los proyectos de aquí, escríbeme.",
+    "elsewhere": "En otros sitios"
   },
   "projects": {
     "title": "Proyectos",
