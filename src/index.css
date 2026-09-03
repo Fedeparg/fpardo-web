@@ -22,10 +22,10 @@
     --bg-tertiary: #e2e5e9;
     --text-primary: #15181c;
     --text-secondary: #4a5158;
-    --text-muted: #7c848c;
+    --text-muted: #636a72;
     --accent: #0b6e63;
     --accent-hover: #085449;
-    --border: #dde1e6;
+    --border: #ccd2da;
 
     /* Raised surface, for logos and diagrams that assume a white backdrop. */
     --surface: #ffffff;
@@ -228,6 +228,7 @@ body {
 .hero-photo img {
     width: 100%;
     border-radius: 4px;
+    border: 1px solid var(--border);
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center;
@@ -566,6 +567,7 @@ body {
 
 .timeline-logo-wrap {
     background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 8px 12px;
     display: flex;
